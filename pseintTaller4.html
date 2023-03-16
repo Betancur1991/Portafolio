@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css\base.css" />
+    <link rel="stylesheet" href="css\javaTaller.css" />
+    <link rel="stylesheet" href="css\array.css">
+
+    <title>Portafolio Daniel Felipe Betancur</title>
+  </head>
+  <body
+    style="background-image: url('img/pseint.jfif'); background-size: cover"
+  >
+    <nav id="navegador">
+      <ul>
+        <li>
+          <a href="index.html"><img src="img\home.png" alt="home" />Home</a>
+        </li>
+        <li><a href="ejerciciosPSeInt.html">Ejercicios PSeInt</a></li>
+        <li>
+          <a
+            href="hoja_de_vida\HOJA_DE_VIDA_DF.pdf"
+            download="HOJA_DE_VIDA_DF.pdf"
+            >Descargar Hoja de Vida.PDF</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne"
+            aria-expanded="false"
+            aria-controls="flush-collapseOne"
+          >
+            Ejercicio 1
+          </button>
+        </h2>
+        <div
+          id="flush-collapseOne"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingOne"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              1-Crear un vector de tipo Entero con 5 posiciones, llenarlo con
+              información solicitada al usuario. Después de recoger toda la
+              información, se requiere imprimir el índice de cada posición en el
+              arreglo con su valor de la siguiente manera:
+            </h6>
+            <img src="img\arreglos1.PNG" alt="tabla" />
+            <br />
+            <p>
+              Proceso sin_titulo <br />
+
+              Definir i,num Como Entero;<br />
+              Dimension num[5];<br />
+
+              para i<-0 Hasta 4 Con Paso 1 Hacer<br />
+              Escribir "Ingresa un numero";<br />
+              leer num[i];<br />
+              FinPara<br />
+
+              para i<-0 Hasta 4 Con Paso 1 Hacer<br />
+              Escribir "° [",i,"]"," = ", num[i];<br />
+              FinPara<br />
+
+              FinProceso<br />
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo"
+            aria-expanded="false"
+            aria-controls="flush-collapseTwo"
+          >
+            Ejercicio 2
+          </button>
+        </h2>
+        <div
+          id="flush-collapseTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingTwo"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              2.Crear un arreglo de números enteros de 20 posiciones, el cual,
+              debe ser llenado con números aleatorios entre 1 y 100; después de
+              haber llenado dicho arreglo, se debe volver a recorrer utilizando
+              un ciclo diferente al que se usó para llenarse e imprimir los
+              números pares e impares. Ejemplo <br />
+              Números pares: 2, 4, 6, 8, 10 <br />
+              Números impares: 1, 3, 5, 7, 9 <br />
+            </h6>
+            <p>
+              Proceso sin_titulo<br />
+              definir vector,contador,i,n como entero;<br />
+              dimension vector[20];<br />
+              n<-101;<br />
+              Para i<-0 Hasta 19 Con Paso 1 Hacer<br />
+              vector[i]<-azar(n);<br />
+
+              FinPara<br />
+              contador<-0;<br />
+              Escribir "Números Pares: " Sin Saltar;<br />
+              Mientras contador < 20 Hacer<br />
+              si vector[contador] mod 2 =0 entonces<br />
+              Escribir vector[contador],"," Sin Saltar;<br />
+              FinSi<br />
+              contador<-contador+1;<br />
+              FinMientras<br />
+              escribir " ";<br />
+              Escribir "Números impares: " Sin Saltar;<br />
+              contador<-0;<br />
+              Mientras contador< 20 Hacer<br />
+              si vector[contador] mod 2 =1 entonces<br />
+              Escribir vector[contador],"," Sin Saltar;<br />
+              FinSi<br />
+              contador<-contador+1;<br />
+              FinMientras<br />
+
+              FinProceso<br />
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree"
+            aria-expanded="false"
+            aria-controls="flush-collapseThree"
+          >
+            Ejercicio 3
+          </button>
+        </h2>
+        <div
+          id="flush-collapseThree"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingThree"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              3.Imprimir los números primos del 1 al 1000, el resultado debe ser
+              buscado de forma matemática.
+            </h6>
+            <p>
+              Proceso sin_titulo <br />
+              definir contador,i,n como entero;<br />
+
+              Para i<-1 Hasta 1000 Con Paso 1 Hacer<br />
+              contador<-0;<br />
+              n<-1;<br />
+              Mientras n<=i Hacer<br />
+              si i%n=0 Entonces<br />
+              contador<-contador+1;<br />
+              FinSi<br />
+              n<-n+1;<br />
+              FinMientras<br />
+
+              si contador=2 Entonces<br />
+              escribir i, " Es un numero primo";<br />
+              FinSi<br />
+
+              FinPara<br />
+
+              FinProceso<br />
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFour">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFour"
+            aria-expanded="false"
+            aria-controls="flush-collapseFour"
+          >
+            Ejercicio 4
+          </button>
+        </h2>
+        <div
+          id="flush-collapseFour"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingFour"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              4.Dada la siguiente matriz bidimensional, el cual debe de quemar
+              en el código
+            </h6>
+            <br />
+            <img src="img\arreglo41.PNG" alt="matriz" /><br />
+            <h6>
+              Utilizando el conocimiento adquirido, a excepción de hacerlo de
+              forma manual, imprima la siguiente matriz bidimensional.
+            </h6>
+            <br />
+            <img src="img\arreglo42.PNG" alt="matriz" /><br />
+            <p>
+              Proceso sin_titulo <br />
+              definir fila,columna,i como entero;<br />
+              definir matriz Como Entero;<br />
+              Dimension matriz[4,5];<br />
+              ; i<-1;<br />
+
+              //creacion de la matriz quemando el codigo<br />
+
+              Para fila<-0 Hasta 3 Con Paso 1 Hacer<br />
+              Para columna<-0 Hasta 4 Con Paso 1 Hacer<br />
+              matriz[fila,columna]<-i;<br />
+              i<-i+1;<br />
+              FinPara<br />
+              FinPara<br />
+
+              Para fila<-0 Hasta 3 Con Paso 1 Hacer<br />
+              Para columna<-0 Hasta 4 Con Paso 1 Hacer<br />
+              Escribir Sin Saltar " ", matriz[fila,columna];<br />
+              FinPara<br />
+              Escribir "";<br />
+              FinPara<br />
+              Escribir "";<br />
+              Escribir "";<br />
+
+              //Utilizando el conocimiento adquirido, a excepción de hacerlo de
+              forma manual, imprima la modificacion de la matriz
+              bidimensional.<br />
+
+              Para fila<-0 Hasta 3 Con Paso 1 Hacer<br />
+              si fila%2=0 Entonces<br />
+              Para columna<-0 Hasta 4 Con Paso 1 Hacer<br />
+              Escribir Sin Saltar " ", matriz[fila,columna];<br />
+              FinPara<br />
+              Escribir "";<br />
+              FinSi<br />
+              si fila%2<>0 Entonces<br />
+              Para columna<-4 Hasta 0 Con Paso -1 Hacer<br />
+              Escribir Sin Saltar " ", matriz[fila,columna];<br />
+              FinPara<br />
+              Escribir "";<br />
+              FinSi<br />
+
+              FinPara<br />
+
+              FinProceso<br />
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFive">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFive"
+            aria-expanded="false"
+            aria-controls="flush-collapseFive"
+          >
+            Ejercicio 5
+          </button>
+        </h2>
+        <div
+          id="flush-collapseFive"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingFive"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>5-Se debe de imprimir el siguiente cuadro</h6>
+            <br />
+            <img src="img\arreglos5.PNG" alt="tablaMultiplicar" id="punto5" /><br />
+            <p>
+              Proceso sin_titulo<br />
+
+              definir menu Como Entero;<br />
+              DEFINIR matriz,i,j Como Entero;<br />
+              Dimension matriz[11,11];<br />
+              menu<-0;<br />
+
+              Para i<-1 Hasta 10 Con Paso 1 Hacer<br />
+              Para j<-1 Hasta 10 Con Paso 1 Hacer<br />
+              matriz[i,j]<-i*j;<br />
+              FinPara<br />
+              FinPara<br />
+
+              Mientras menu=0 Hacer<br />
+
+              Escribir "Ingrese el numero (1), para ver la tabla de
+              multiplicar";<br />
+              leer menu;<br />
+              Limpiar Pantalla;<br />
+
+              Mientras menu=1 Hacer<br />
+
+              Escribir " COLUMNAS";<br />
+              Escribir
+              "_________________________________________________________________________________________________________";<br />
+              Escribir " "," "," 0 "," 1 "," 2 "," 3 "," 4 "," 5 "," 6 "," 7 ","
+              8 "," 9 ";<br />
+              Escribir " "," 0 "," 1X1 "," 2X1 "," 3X1 "," 4X1 "," 5X1 "," 6X1
+              "," 7X1 "," 8X1 "," 9X1 "," 10X1 ";<br />
+              Escribir " "," 1 "," 1X2 "," 2X2 "," 3X2 "," 4X2 "," 5X2 "," 6X2
+              "," 7X2 "," 8X2 "," 9X2 "," 10X2 ";<br />
+              Escribir " "," 2 "," 1X3 "," 2X3 "," 3X3 "," 4X3 "," 5X3 "," 6X3
+              "," 7X3 "," 8X3 "," 9X3 "," 10X3 ";<br />
+              Escribir " F "," 3 "," 1X4 "," 2X4 "," 3X4 "," 4X4 "," 5X4 "," 6X4
+              "," 7X4 "," 8X4 "," 9X4 "," 10X4 ";<br />
+              Escribir " I "," 4 "," 1X5 "," 2X5 "," 3X5 "," 4X5 "," 5X5 "," 6X5
+              "," 7X5 "," 8X5 "," 9X5 "," 10X5 ";<br />
+              Escribir " L "," 5 "," 1X6 "," 2X6 "," 3X6 "," 4X6 "," 5X6 "," 6X6
+              "," 7X6 "," 8X6 "," 9X6 "," 10X6 ";<br />
+              Escribir " A "," 6 "," 1X7 "," 2X7 "," 3X7 "," 4X7 "," 5X7 "," 6X7
+              "," 7X7 "," 8X7 "," 9X7 "," 10X7 ";<br />
+              Escribir " S "," 7 "," 1X8 "," 2X8 "," 3X8 "," 4X8 "," 5X8 "," 6X8
+              "," 7X8 "," 8X8 "," 9X8 "," 10X8 ";<br />
+              Escribir " "," 8 "," 1X9 "," 2X9 "," 3X9 "," 4X9 "," 5X9 "," 6X9
+              "," 7X9 "," 8X9 "," 9X9 "," 10X9 ";<br />
+              Escribir " "," 9 "," 1X10 "," 2X10 "," 3X10 "," 4X10 "," 5X10 ","
+              6X10 "," 7X10 "," 8X10 "," 9X10 "," 10X10 ";<br />
+              menu<-6;<br />
+              FinMientras<br />
+              Escribir " ";<br />
+              Escribir "Ingrese el numero (2), para conocer el resultado de la
+              posicion que desea";<br />
+              leer menu; <br />
+
+              Mientras menu=2 Hacer<br />
+              escribir "fila que desea conocer";<br />
+              leer i;<br />
+              i<-i+1;<br />
+              escribir "columna que desea conocer";<br />
+              leer j;<br />
+              j<-j+1;<br />
+
+              Escribir "El resultado de multiplicar la posicion
+              ","(",i-1,",",j-1,")"," es ",matriz[i,j];<br />
+
+              menu<-0;<br />
+
+              FinMientras<br />
+
+              FinMientras<br />
+
+              FinProceso<br />
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/k3bEgyCczNQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <footer>
+      <p>Realizado por: Daniel Felipe Betancur Córdoba</p>
+      <p>Derechos recervados</p>
+      <div class="enlacesFooter">
+        <a href="https://mail.google.com/mail/u/0/?pli=1#inbox?compose=new">
+          <img src="img\mail.png" alt="correo electronico" />
+        </a>
+        <a href="https://www.linkedin.com/in/daniel-felipe-betancur-cordoba/">
+          <img src="img\linkedin.png" alt="linkedin" />
+        </a>
+        <a href="https://github.com/Betancur1991">
+          <img src="img\github.png" alt="github" />
+        </a>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

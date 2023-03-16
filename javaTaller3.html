@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css\base.css" />
+    <link rel="stylesheet" href="css\javaTaller.css" />
+
+    <title>Portafolio Daniel Felipe Betancur</title>
+  </head>
+  <body style="background-image: url('img/java.jfif'); background-size: cover">
+    <nav id="navegador">
+      <ul>
+        <li>
+          <a href="index.html"><img src="img\home.png" alt="home" />Home</a>
+        </li>
+        <li><a href="ejerciciosJava.html">Ejercicios Java</a></li>
+        <li>
+          <a
+            href="hoja_de_vida\HOJA_DE_VIDA_DF.pdf"
+            download="HOJA_DE_VIDA_DF.pdf"
+            >Descargar Hoja de Vida.PDF</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne"
+            aria-expanded="false"
+            aria-controls="flush-collapseOne"
+          >
+            Ejercicio 1
+          </button>
+        </h2>
+        <div
+          id="flush-collapseOne"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingOne"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              1-Realizar la siguiente figura por medio del ciclo Para.
+            </h6>
+            *<br>
+            **<br>
+            ***<br>
+            ****<br>
+            *****<br>
+            ******<br>
+            *******<br>
+            ********<br>
+            *********<br>
+            **********<br>
+            <br>
+            <br>
+            <br>
+            public class Main {<br>
+                public static void main(String[] args) {<br>
+                    for (int i=1;i<=11;i++){<br>
+                        for (int j=1;j<=i;j++){<br>
+                            System.out.print("*");<br>
+                        }<br>
+                        System.out.println();<br>
+                    }<br>
+                }<br>
+            }<br>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo"
+            aria-expanded="false"
+            aria-controls="flush-collapseTwo"
+          >
+            Ejercicio 2
+          </button>
+        </h2>
+        <div
+          id="flush-collapseTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingTwo"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              2-Realizar la siguiente figura por medio del ciclo Mientras - Hacer).
+            </h6>
+            <img src="img\ciclos2.PNG" alt="triangulo"><br>
+            public class Main {<br>
+                public static void main(String[] args) {<br>
+                    int espacios,filas,asteriscos;<br>
+                    espacios=10;<br>
+                    filas=1;<br>
+                    asteriscos=1;<br>
+                    while (filas!=11){<br>
+                        while (espacios>filas){<br>
+                            System.out.print(" ");<br>
+                            while (asteriscos<=filas && espacios==filas+1){<br>
+                                System.out.print("*");<br>
+                                asteriscos++;<br>
+                            }<br>
+                            espacios--;<br>
+                        }<br>
+                        asteriscos=1;<br>
+                        espacios=10;<br>
+                        System.out.println();<br>
+                        filas++;<br>
+                    }<br>
+                }<br>
+            }<br>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree"
+            aria-expanded="false"
+            aria-controls="flush-collapseThree"
+          >
+            Ejercicio 3
+          </button>
+        </h2>
+        <div
+          id="flush-collapseThree"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingThree"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              3-Realizar la siguiente figura por medio del ciclo Repetir - Hasta Que.
+            </h6>
+            <img src="img\ciclos3.PNG" alt="arbolito"><br>
+            public class Main {<br>
+                public static void main(String[] args) {<br>
+                    int filas=1;<br>
+                    int espacios=10;<br>
+                    int asteriscos=1;<br>
+                    int limite=1;<br>
+                    do {<br>
+                        if (filas< 10){<br>
+            
+                            do {<br>
+                                System.out.print("  ");<br>
+                                espacios--;<br>
+                            }while (espacios>filas);<br>
+            
+            
+                            if (filas>1 ){<br>
+                                limite=filas*2;<br>
+                                do {<br>
+                                    System.out.print(" *");<br>
+                                    asteriscos++;<br>
+                                }while (asteriscos+1< limite);<br>
+                                asteriscos=1;<br>
+                            }<br>
+            
+                            System.out.println(" *");<br>
+                            espacios=10;<br>
+            
+                        }<br>
+                        if (filas>=10 && filas< 12){<br>
+                            do {<br>
+                                System.out.print("_");<br>
+                                espacios++;<br>
+                            }while (espacios< limite+8);<br>
+                            espacios=10;<br>
+                            do {<br>
+                                System.out.print(" *");<br>
+                                espacios++;<br>
+                            }while (espacios< limite-4);<br>
+                            System.out.println();<br>
+                            espacios=10;<br>
+            
+                        }<br>
+                        if (filas>=12 && filas< 13){<br>
+                            do {<br>
+                                System.out.print("_");<br>
+                                espacios++;<br>
+                            }while (espacios< limite+7);<br>
+                            espacios=10;<br>
+                            do {<br>
+                                System.out.print(" *");<br>
+                                espacios++;<br>
+                            }while (espacios< limite-3);<br>
+                            System.out.println();<br>
+                            espacios=10;<br>
+            
+                        }<br>
+                        if (filas==13){<br>
+                            do {<br>
+                                System.out.print("_");<br>
+                                espacios++;<br>
+                            }while (espacios< limite+6);<br>
+                            espacios=10;<br>
+                            do {<br>
+                                System.out.print(" *");<br>
+                                espacios++;<br>
+                            }while (espacios< limite-2);<br>
+                            System.out.println();<br>
+                            espacios=10;<br>
+            
+                        }<br>
+                        filas++;<br>
+            
+            
+            
+                    }while (filas!=14);<br>
+                }<br>
+            }<br>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFour">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFour"
+            aria-expanded="false"
+            aria-controls="flush-collapseFour"
+          >
+            Ejercicio 4
+          </button>
+        </h2>
+        <div
+          id="flush-collapseFour"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingFour"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              4-Se requiere un programa que pueda crear la tabla de multiplicar del número que el usuario indique por medio del ciclo Para; esta debe ser impresa del 1 al 10. Ejemplo, si el usuario indica que desea crear la tabla del 5, entonces el resultado debería ser el siguiente:
+            </h6>
+            <img src="img\tabla.PNG" alt="tabla"><br>
+            import java.util.ArrayList;<br>
+import java.util.Scanner;<br>
+
+public class Main {<br>
+    public static void main(String[] args) {<br>
+        Scanner scanner=new Scanner(System.in);<br>
+        int numero;<br>
+        do {<br>
+            System.out.println("Ingrese el numero que quiere multiplicar y oprima enter, o cero mas enter para salir");<br>
+            numero=scanner.nextInt();<br>
+            Tabla numeroMultiplicar=new Tabla(numero);<br>
+            numeroMultiplicar.multiplicacion();<br>
+
+
+        }while(numero!=0);<br>
+    }<br>
+}<br>
+<br>
+<br>
+
+public class Tabla {<br>
+    private int numero;<br>
+
+    public Tabla(int numero) {<br>
+        this.numero = numero;<br>
+    }<br>
+    public void multiplicacion(){<br>
+        if (numero!=0){<br>
+            for (int i=1;i<=10;i++){<br>
+                System.out.println(i+" X "+numero+" = "+i*numero);<br>
+            }<br>
+        }else {<br>
+            System.out.println("Muchas gracias por visitarnos");<br>
+        }<br>
+
+    }<br>
+
+
+}<br>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFive">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFive"
+            aria-expanded="false"
+            aria-controls="flush-collapseFive"
+          >
+            Ejercicio 5
+          </button>
+        </h2>
+        <div
+          id="flush-collapseFive"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingFive"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              5-Utilizando el ciclo que usted desee, crear un menú de ejecución infinita hasta que el usuario desee terminar dicho ciclo.
+            </h6>
+            <img src="img\menu.PNG" alt="menu"><br>
+            import java.util.Scanner;<br>
+
+public class Main {<br>
+    public static void main(String[] args) {<br>
+        int x=1;<br>
+        String name="__";<br>
+        do {<br>
+            System.out.println("Bienvenido, digita el numero de la opción que deseas ejecutar y luego oprime enter");<br>
+            System.out.println("1. Ingresa tu nombre");<br>
+            System.out.println("2. Saludar persona");<br>
+            System.out.println("3. salir");<br>
+            Scanner scanner=new Scanner(System.in);<br>
+            x=scanner.nextInt();<br>
+            switch (x){<br>
+                case 1:<br>
+                    System.out.println("Ingresa tu Nombre");<br>
+                    Scanner scanner1=new Scanner(System.in);<br>
+                    name=scanner1.nextLine();<br>
+                    break;<br>
+                case 2:<br>
+                    if (name=="__"){<br>
+                        System.out.println("Debes ingresar un nombre primero");<br>
+                    }else {<br>
+                        System.out.println("Hola, "+name);<br>
+                    }<br>
+                    break;<br>
+                case 3:<br>
+                    System.out.println("Muchas gracias por visitarnos");<br>
+                    break;<br>
+            }<br>
+
+        }while (x!=3);<br>
+    }<br>
+}<br>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingSix">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseSix"
+            aria-expanded="false"
+            aria-controls="flush-collapseSix"
+          >
+            Ejercicio 6
+          </button>
+        </h2>
+        <div
+          id="flush-collapseSix"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingSix"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              6-Se está creando una aplicación que va a estar conectada con un prototipo que permita almacenar contactos telefónicos en el dispositivo. Para ello cada contacto debe contener nombre completo, teléfono y organización. Se requiere que la aplicación permita añadir 3 contactos verificando que el número no esté almacenado, buscar contactos almacenados y eliminar contactos si el usuario lo requiere. Recuerde que el sistema debe terminar cuando el usuario así lo indique.
+            </h6>
+            import java.util.List;<br>
+import java.util.Scanner;<br>
+
+public class Main {<br>
+    public static void main(String[] args) {<br>
+        Agenda miAgenda = new Agenda();<br>
+        Scanner sc = new Scanner(System.in);<br>
+
+        int opcion = 0;<br>
+        do {<br>
+            System.out.println("-------- Menu de opciones --------");<br>
+            System.out.println("1. Agregar contacto");<br>
+            System.out.println("2. Buscar contacto");<br>
+            System.out.println("3. Eliminar contacto");<br>
+            System.out.println("4. Imprimir contactos");<br>
+            System.out.println("5. Salir");<br>
+            System.out.print("Ingrese una opcion: ");<br>
+            opcion = sc.nextInt();<br>
+
+            switch (opcion) {<br>
+                case 1:<br>
+                    System.out.print("Ingrese el nombre del contacto: ");<br>
+                    String nombre = sc.next();<br>
+                    sc.nextLine();<br>
+                    System.out.print("Ingrese el número de teléfono del contacto: ");<br>
+                    String telefono = sc.next();<br>
+                    System.out.print("Ingrese la organización del contacto: ");<br>
+                    String organizacion = sc.next();<br>
+                    Contactos nuevoContacto = new Contactos(nombre, telefono, organizacion);<br>
+                    if (miAgenda.agregarContacto(nuevoContacto)) {<br>
+                        System.out.println("Contacto agregado correctamente.");<br>
+                        break;<br>
+                    }<br>
+                    break;<br>
+                case 2:<br>
+                    System.out.print("Ingrese el nombre del contacto a buscar: ");<br>
+                    String nombreBuscar = sc.next();<br>
+                    List< Contactos > contactosEncontrados = miAgenda.buscarContacto(nombreBuscar);<br>
+                    if (!contactosEncontrados.isEmpty()) {<br>
+                        System.out.println("Contactos encontrados:");<br>
+                        for (Contactos contacto : contactosEncontrados) {<br>
+                            System.out.println("Nombre: " + contacto.getName() + ", Teléfono: " + contacto.getPhoneNumber() + ", Organización: " + contacto.getOrganizacion());<br>
+                        }<br>
+                    } else {<br>
+                        System.out.println("No se encontraron contactos con ese nombre.");<br>
+                    }<br>
+                    break;<br>
+                case 3:<br>
+                    miAgenda.imprimirContactos();<br>
+                    System.out.print("Ingrese el identificador del contacto a eliminar: ");<br>
+                    int idEliminar = sc.nextInt();<br>
+                    if (miAgenda.eliminarContacto(idEliminar)) {<br>
+                        System.out.println("Contacto eliminado correctamente.");<br>
+                    } else {<br>
+                        System.out.println("El contacto no se encontró en la agenda.");<br>
+                    }<br>
+                    break;<br>
+                case 4:<br>
+                    miAgenda.imprimirContactos();<br>
+                    break;<br>
+                case 5:<br>
+                    System.out.println("Gracias por usar tu agenda virtual, vuelve pronto");<br>
+                    break;<br>
+                default:<br>
+                    System.out.println("La opción ingresada no es valida, no se encuentra dentro de las opciones posibles, por favor intentalo de nuevo");<br>
+            }<br>
+        } while (opcion != 5);<br>
+    }<br>
+}<br>
+<br>
+<br>
+import java.util.ArrayList;<br>
+import java.util.List;<br>
+
+public class Agenda {<br>
+    private ArrayList<Contactos> contactos;<br>
+    private final int CAPACIDAD_MAXIMA = 3;<br>
+
+    public Agenda() {<br>
+        contactos = new ArrayList<>();<br>
+    }<br>
+
+    public boolean agregarContacto(Contactos contacto) {<br>
+        for (Contactos c : contactos) {<br>
+            if (c.getPhoneNumber().equals(contacto.getPhoneNumber())) {<br>
+                System.out.println("Error: El número de teléfono ya está en uso por otro contacto.");<br>
+                return false;<br>
+            }<br>
+        }<br>
+
+        if (contactos.size() < CAPACIDAD_MAXIMA) {<br>
+            contactos.add(contacto);<br>
+            return true;<br>
+        } else {<br>
+            System.out.println("Error: La agenda está llena.");<br>
+            return false;<br>
+        }<br>
+    }<br>
+
+    public List<Contactos> buscarContacto(String nombre) {<br>
+        List<Contactos> contactosEncontrados = new ArrayList<>();<br>
+        for (Contactos contacto : contactos) {<br>
+            if (contacto.getName().equals(nombre)) {<br>
+                contactosEncontrados.add(contacto);<br>
+            }<br>
+        }<br>
+        return contactosEncontrados;<br>
+    }<br>
+
+    public boolean eliminarContacto(int id) {<br>
+        for (Contactos contacto : contactos) {<br>
+            if (contacto.getId() == id) {<br>
+                contactos.remove(contacto);<br>
+                return true;<br>
+            }<br>
+        }<br>
+        return false;<br>
+    }<br>
+
+    public void imprimirContactos() {<br>
+        if (contactos.size() > 0) {<br>
+            System.out.println("Lista de contactos:");<br>
+            for (Contactos contacto : contactos) {<br>
+                System.out.println("Id: "+contacto.getId()+" Nombre: " + contacto.getName() + ", Teléfono: " + contacto.getPhoneNumber() + ", Organización: " + contacto.getOrganizacion());<br>
+            }<br>
+        } else {<br>
+            System.out.println("La agenda está vacía.");<br>
+        }<br>
+    }<br>
+}<br>
+<br>
+<br>
+public class Contactos {<br>
+  private String name;<br>
+  private String phoneNumber;<br>
+  private String organizacion;<br>
+  private int id;<br>
+
+  private static int nextId = 1;<br>
+
+  public Contactos(String name, String phoneNumber, String organizacion) {<br>
+      this.name = name;<br>
+      this.phoneNumber = phoneNumber;<br>
+      this.organizacion = organizacion;<br>
+      this.id = nextId;<br>
+      nextId++;<br>
+  }<br>
+
+  public String getName() {<br>
+      return name;<br>
+  }<br>
+
+  public String getPhoneNumber() {<br>
+      return phoneNumber;<br>
+  }<br>
+
+  public String getOrganizacion() {<br>
+      return organizacion;<br>
+  }<br>
+
+  public int getId() {<br>
+      return id;<br>
+  }<br>
+}<br>
+<br>
+<br>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingSeven">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseSeven"
+            aria-expanded="false"
+            aria-controls="flush-collapseSeven"
+          >
+            Ejercicio 7
+          </button>
+        </h2>
+        <div
+          id="flush-collapseSeven"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingSeven"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              7-El parqueadero "El guardián" presta sus servicios de parqueadero nocturno para los usuarios del barrio y requiere una aplicación que permita registrar los vehículos que se cuidan en estas instalaciones. Se sugiere que el parqueadero tenga los atributos del vehículo como son, placa y marca, y los datos del cliente como son nombre completo y número de teléfono. Para cada vehículo se debe permitir la opción de ingresar al parqueadero, retirar del parqueadero y consultar si un vehículo se encuentra en el parqueadero. Recuerde que el sistema debe terminar cuando el usuario así lo indique. Tenga en presente que el parqueadero solo puede almacenar máximo 5 vehículos.
+            </h6>
+            import java.util.List;<br>
+import java.util.Scanner;<br>
+
+public class Main {<br>
+    public static void main(String[] args) {<br>
+        Parquedero parquedero = new Parquedero();<br>
+        Scanner sc = new Scanner(System.in);<br>
+
+        int opcion = 0;<br>
+        do {<br>
+            System.out.println("-------- Menu de opciones --------");<br>
+            System.out.println("1. Ingresar vehículo al parquedero");<br>
+            System.out.println("2. Retirar del parquedero");<br>
+            System.out.println("3. Consulta si tu vehículo se encuentra en el parquedero");<br>
+            System.out.println("4. Salir");<br>
+            System.out.print("Ingrese una opcion: ");<br>
+            opcion = sc.nextInt();<br>
+
+            switch (opcion) {<br>
+                case 1:<br>
+                    System.out.println("Ingresa el nombre del propietario del vehículo:");<br>
+                    String name= sc.next();<br>
+                    System.out.println("Ingresa tu numero celular:");<br>
+                    String cel= sc.next();<br>
+                    System.out.println("Ingresa la marca de tu vehículo");<br>
+                    String marca= sc.next();<br>
+                    System.out.println("Ingresa el modelo de tu vehículo");<br>
+                    String modelo= sc.next();<br>
+                    System.out.println("Ingresa la placa de tu vehículo");<br>
+                    String placa= sc.next();<br>
+                    Vehiculo vehiculoIngresado=new Vehiculo(name,cel,marca,modelo,placa);<br>
+                    if (parquedero.ingresarVehiculo(vehiculoIngresado)){<br>
+                        System.out.println("Vehículo ingresado al parquedero.");<br>
+                    }break;<br>
+                case 2:<br>
+                    System.out.println("Ingresa la placa de tu vehículo");<br>
+                    placa= sc.next();<br>
+                    if (parquedero.retirarVehiculo(placa)){<br>
+                        System.out.println("Vehículo retirado del parquedero.");<br>
+                    }break;<br>
+                case 3:<br>
+                    System.out.println("Ingresa la placa de tu vehículo");<br>
+                    placa= sc.next();<br>
+                    if (parquedero.consultarVehiculo(placa)){<br>
+                        System.out.println("Tu vehículo se encuentra en el parquedero.");<br>
+                    }else {<br>
+                        System.out.println("Tu vehículo no se encuentra en el parquedero.");<br>
+                    }break;<br>
+                case 4:<br>
+                    System.out.println("Gracias por usar el sistema de tu parquedero, vuelve pronto");<br>
+                    break;<br>
+                default:<br>
+                    System.out.println("La opción ingresada no es valida, no se encuentra dentro de las opciones posibles, por favor intentalo de nuevo");<br>
+            }<br>
+        } while (opcion != 4);<br>
+    }<br>
+}<br>
+<br>
+<br>
+import java.util.ArrayList;<br>
+
+public class Parquedero {<br>
+    private ArrayList<Vehiculo> vehiculos;<br>
+    private final int CAPACIDAD_MAXIMA = 5;<br>
+
+    public Parquedero() {<br>
+        vehiculos = new ArrayList<>();<br>
+    }<br>
+
+    public boolean ingresarVehiculo(Vehiculo vehiculo) {<br>
+        for (Vehiculo v : vehiculos) {<br>
+            if (v.getPlaca().equals(vehiculo.getPlaca())) {<br>
+                System.out.println("Error: El vehiculo que intenta ingresar ya se encuentra ingresado.");<br>
+                return false;<br>
+            }<br>
+        }<br>
+
+        if (vehiculos.size() < CAPACIDAD_MAXIMA) {<br>
+            vehiculos.add(vehiculo);<br>
+            return true;<br>
+        } else {<br>
+            System.out.println("Error: Lo sentimos el parqueadero se encuentra lleno.");<br>
+            return false;<br>
+        }<br>
+    }<br>
+
+    public boolean retirarVehiculo(String placa) {<br>
+        for (Vehiculo v : vehiculos) {<br>
+            if (v.getPlaca().equals(placa)) {<br>
+                System.out.println("El vehiculo se ha retirado del parquedero.");<br>
+                vehiculos.remove(v);<br>
+                return true;<br>
+            }else {<br>
+                System.out.println("Error: Lo sentimos el vehículo no se encuentra en el parqueadero.");<br>
+                return false;<br>
+            }<br>
+        }return false;<br>
+
+    }<br>
+
+    public boolean consultarVehiculo(String placa) {<br>
+        for (Vehiculo v : vehiculos) {<br>
+            if (v.getPlaca().equals(placa)) {<br>
+                return true;<br>
+            }<br>
+        }<br>
+        for (Vehiculo v : vehiculos) {<br>
+            if (!v.getPlaca().equals(placa)) {<br>
+                return false;<br>
+            }<br>
+        }<br>
+
+        return false;<br>
+
+    }<br>
+}<br>
+<br>
+<br>
+public class Vehiculo {<br>
+  private String name;<br>
+  private String phoneNumber;<br>
+  private String marca;<br>
+  private String modelo;<br>
+  private  String placa;<br>
+
+  public Vehiculo(String name, String phoneNumber, String marca, String modelo, String placa) {<br>
+      this.name = name;<br>
+      this.phoneNumber = phoneNumber;<br>
+      this.marca = marca;<br>
+      this.modelo = modelo;<br>
+      this.placa = placa;<br>
+  }<br>
+
+  public String getPlaca() {<br>
+      return placa;<br>
+  }<br>
+}<br>
+<br>
+<br>
+     </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingEight">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseEight"
+            aria-expanded="false"
+            aria-controls="flush-collapseEight"
+          >
+            Ejercicio 8
+          </button>
+        </h2>
+        <div
+          id="flush-collapseEight"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingEight"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              8-La escuela automovilística "El Maestro" requiere una aplicación que permita registrar a sus clientes en los cursos de enseñanza automovilística y establecer quienes lo han aprobado para continuar con el trámite de adquirir la licencia de conducción. Para cada usuario se debe permitir registrar su ingreso al curso, consultar usuarios que hayan presentado el curso y resultados de la prueba del curso (si fueron aprobados o no). Recuerde que el sistema debe terminar cuando el usuario así lo indique. Tenga presente que la escuela tiene capacidad máxima de gestionar 8 usuarios en su totalidad.
+            </h6>
+            import java.util.List;<br>
+import java.util.Scanner;<br>
+
+public class Main {<br>
+    public static void main(String[] args) {<br>
+        Escuela escuela = new Escuela();<br>
+        Scanner sc = new Scanner(System.in);<br>
+
+        int opcion = 0;<br>
+        do {<br>
+            System.out.println("-------- Menu de opciones --------");<br>
+            System.out.println("1. Registrate al curso");<br>
+            System.out.println("2. Consultar resultados del curso");<br>
+            System.out.println("3. Consultar usuarios registrados");<br>
+            System.out.println("4. Salir");<br>
+            System.out.print("Ingrese una opcion: ");<br>
+            opcion = sc.nextInt();<br>
+
+            switch (opcion) {<br>
+                case 1:<br>
+                    System.out.print("Ingrese el nombre del contacto: ");<br>
+                    String nombre = sc.next();<br>
+                    sc.nextLine();<br>
+                    System.out.print("Ingrese el número de cedula: ");<br>
+                    String cedula = sc.next();<br>
+                    System.out.print("Ingrese el número de celular: ");<br>
+                    String celular = sc.next();<br>
+                    Usuario nuevoContacto = new Usuario(nombre, cedula, celular);<br>
+                    if (escuela.agregarEstudiante(nuevoContacto)) {<br>
+                        System.out.println("Contacto agregado correctamente.");<br>
+                        break;<br>
+                    }<br>
+                    break;<br>
+                case 2:<br>
+                    System.out.print("Ingrese el numero de cedula: ");<br>
+                    cedula = sc.next();<br>
+                    boolean x=escuela.conocerResultados(cedula);<br>
+                    if (x==false){<br>
+                        System.out.println("No se encontro un usuario con esta identificación");<br>
+                    }<br>
+                    break;<br>
+                case 3:<br>
+                    escuela.mostrarUsuariosRegistrados();<br>
+                    break;<br>
+                case 4:<br>
+                    System.out.println("Gracias por visitarnos, vuelve pronto");<br>
+                    break;<br>
+                default:<br>
+                    System.out.println("La opción ingresada no es valida, no se encuentra dentro de las opciones posibles, por favor intentalo de nuevo");<br>
+            }<br>
+        } while (opcion != 4);<br>
+    }<br>
+}<br>
+<br>
+<br>
+import java.util.ArrayList;<br>
+import java.util.Random;<br>
+
+public class Escuela {<br>
+    private ArrayList< Usuario > usuarios;<br>
+    private final int CAPACIDAD_MAXIMA = 8;<br>
+    public Escuela(){<br>
+        usuarios=new ArrayList<>();<br>
+    }<br>
+    public boolean agregarEstudiante(Usuario usuario){<br>
+        for (Usuario u:usuarios){<br>
+            if (u.getCedula().equals(usuario.getCedula())){<br>
+                System.out.println("Error: ya existe un usuario con esta identificacion.");<br>
+                return false;<br>
+            }<br>
+        }<br>
+        if (usuarios.size()< CAPACIDAD_MAXIMA){<br>
+            usuarios.add(usuario);<br>
+            return true;<br>
+        }else {<br>
+            System.out.println("Error: Ya no tenemos mas cupos disponibles por favor espera a que abramos nuevas inscripciones.");<br>
+            return false;<br>
+        }<br>
+    }<br>
+
+    public boolean conocerResultados(String cedula){<br>
+        Random random= new Random();<br>
+        int nota=random.nextInt(10)+1;<br>
+        for (Usuario u:usuarios){<br>
+           if(u.getCedula().equals(cedula)){<br>
+               if (nota< 5){<br>
+                   System.out.println("Has perdido el curso, vuelve a intentarlo");<br>
+                   return true;<br>
+               }else if (nota>=5){<br>
+                   System.out.println("Felicidades has aprobado el curso");<br>
+                   return true;<br>
+               }<br>
+           }<br>
+        }return false;<br>
+    }<br>
+
+    public void mostrarUsuariosRegistrados(){<br>
+        System.out.println("Los documentos de los usuarios registrados hasta este momento son los siguientes");<br>
+      int i=1;<br>
+        for (Usuario u:usuarios){<br>
+            System.out.println(i+"- Documento: "+u.getCedula());<br>
+            i++;<br>
+            }<br>
+    }<br>
+}<br>
+<br>
+<br>
+public class Usuario {<br>
+  private String name;<br>
+  private String cedula;<br>
+  private String celular;<br>
+
+  public Usuario(String name,String cedula, String celular){<br>
+      this.name=name;<br>
+      this.cedula=cedula;<br>
+      this.celular=celular;<br>
+  }<br>
+
+  public String getName() {<br>
+      return name;<br>
+  }<br>
+
+  public void setName(String name) {<br>
+      this.name = name;<br>
+  }<br>
+
+  public String getCedula() {<br>
+      return cedula;<br>
+  }<br>
+
+  public void setCedula(String cedula) {<br>
+      this.cedula = cedula;<br>
+  }<br>
+
+  public String getCelular() {<br>
+      return celular;<br>
+  }<br>
+
+  public void setCelular(String celular) {<br>
+      this.celular = celular;<br>
+  }<br>
+}<br>
+<br>
+<br>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>Realizado por: Daniel Felipe Betancur Córdoba</p>
+      <p>Derechos recervados</p>
+      <div class="enlacesFooter">
+        <a href="https://mail.google.com/mail/u/0/?pli=1#inbox?compose=new">
+          <img src="img\mail.png" alt="correo electronico" />
+        </a>
+        <a href="https://www.linkedin.com/in/daniel-felipe-betancur-cordoba/">
+          <img src="img\linkedin.png" alt="linkedin" />
+        </a>
+        <a href="https://github.com/Betancur1991">
+          <img src="img\github.png" alt="github" />
+        </a>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

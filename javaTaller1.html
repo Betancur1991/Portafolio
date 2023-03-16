@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css\base.css" />
+    <link rel="stylesheet" href="css\javaTaller.css" />
+
+    <title>Portafolio Daniel Felipe Betancur</title>
+  </head>
+  <body style="background-image: url('img/java.jfif'); background-size: cover">
+    <nav id="navegador">
+      <ul>
+        <li>
+          <a href="index.html"><img src="img\home.png" alt="home" />Home</a>
+        </li>
+        <li><a href="ejerciciosJava.html">Ejercicios Java</a></li>
+        <li>
+          <a
+            href="hoja_de_vida\HOJA_DE_VIDA_DF.pdf"
+            download="HOJA_DE_VIDA_DF.pdf"
+            >Descargar Hoja de Vida.PDF</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne"
+            aria-expanded="false"
+            aria-controls="flush-collapseOne"
+          >
+            Ejercicio 1
+          </button>
+        </h2>
+        <div
+          id="flush-collapseOne"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingOne"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              1-Realizar un programa el cual solicite su nombre y apellidos.
+            </h6>
+            <br />
+            import java.util.Scanner; <br />
+
+            public class Main {<br />
+            public static void main(String[] args) {<br />
+            Scanner dato= new Scanner(System.in);<br />
+            String name;<br />
+            String lastName;<br />
+
+            System.out.println("Ingresa tu Nombre: ");<br />
+            name= dato.nextLine();<br />
+            System.out.println("Ingresa tus Apellidos: ");<br />
+            lastName= dato.nextLine();<br />
+            User usuario1= new User(name,lastName);<br />
+            }<br />
+            }<br />
+            <br />
+            <br />
+            public class User {<br />
+
+            private String name;<br />
+            private String lastName;<br />
+
+            User(String name, String lastName){<br />
+            System.out.println("El nombre asignado es: "+name +" y el apellido
+            es: "+lastName);<br />
+
+            this.name=name;<br />
+            this.lastName=lastName;<br />
+            }<br />
+
+            }<br />
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo"
+            aria-expanded="false"
+            aria-controls="flush-collapseTwo"
+          >
+            Ejercicio 2
+          </button>
+        </h2>
+        <div
+          id="flush-collapseTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingTwo"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              2-Realizar un programa el cual solicite su nombre, apellidos, edad
+              y estatura.
+            </h6>
+            import java.util.Scanner;<br />
+
+            public class Main {<br />
+            public static void main(String[] args) {<br />
+            Scanner dato= new Scanner(System.in);<br />
+            String name;<br />
+            String lastName;<br />
+            int age;<br />
+            float heigh;<br />
+            <br />
+            System.out.println("Ingresa tu Nombre: ");<br />
+            name= dato.nextLine();<br />
+            System.out.println("Ingresa tus Apellidos: ");<br />
+            lastName= dato.nextLine();<br />
+            System.out.println("Ingresa tu edad: ");<br />
+            age= Integer.parseInt(dato.nextLine());<br />
+            System.out.println("Ingresa tu altura en metros: ");<br />
+            heigh= Float.parseFloat(dato.nextLine());<br />
+            User usuario1= new User(name,lastName,age,heigh);<br />
+            }<br />
+
+            }<br />
+            <br />
+            <br />
+            public class User {<br />
+
+            private String name;<br />
+            private String lastName;<br />
+            private int age;<br />
+            private float Heigh;<br />
+
+            public User(String name, String lastName, int age, float heigh) {<br />
+            System.out.println("El nombre asignado es: "+name +" y el apellido
+            es: "+lastName);<br />
+            System.out.println("su edad es de: "+age +" años y su estatura es
+            de: "+heigh+" metros");<br />
+            this.name = name;<br />
+            this.lastName = lastName;<br />
+            this.age = age;<br />
+            Heigh = heigh;<br />
+            }<br />
+            }<br />
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree"
+            aria-expanded="false"
+            aria-controls="flush-collapseThree"
+          >
+            Ejercicio 3
+          </button>
+        </h2>
+        <div
+          id="flush-collapseThree"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingThree"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              3-Realizar un programa el cual solicite su nombre y apellidos,
+              también debe capturar nombre y apellidos de su padre y madre. Al
+              finalizar debe imprimir en pantalla el siguiente mensaje "Yo
+              [Nombre Completo], soy hijo de [Nombre de la Madre] y [Nombre del
+              Padre].
+            </h6>
+            import java.util.Scanner;<br />
+
+            public class Main {<br />
+            public static void main(String[] args) {<br />
+            Scanner dato= new Scanner(System.in);<br />
+            String name;<br />
+            String lastName;<br />
+
+            System.out.println("Ingresa tu Nombre: ");<br />
+            name= dato.nextLine();<br />
+            System.out.println("Ingresa tus Apellidos: ");<br />
+            lastName= dato.nextLine();<br />
+            User usuario1= new User(name,lastName);<br />
+
+            System.out.println("Ingresa el Nombre de tu papá: ");<br />
+            name= dato.nextLine();<br />
+            System.out.println("Ingresa sus Apellidos: ");<br />
+            lastName= dato.nextLine();<br />
+            User papa1= new User(name,lastName);<br />
+
+            System.out.println("Ingresa el Nombre de tu mamá: ");<br />
+            name= dato.nextLine();<br />
+            System.out.println("Ingresa sus Apellidos: ");<br />
+            lastName= dato.nextLine();<br />
+            User mama1= new User(name,lastName);<br />
+            System.out.println("Yo: "+usuario1.getName()+"
+            "+usuario1.getLastName()+", soy hijo de "+mama1.getName()+"
+            "+mama1.getLastName()+" y "+papa1.getName()+"
+            "+papa1.getLastName());<br />
+            }<br />
+
+            }<br />
+            <br />
+            <br />
+            public class User {<br />
+
+            private String name;<br />
+            private String lastName;<br />
+
+            User(String name, String lastName){<br />
+
+            this.name=name;<br />
+            this.lastName=lastName;<br />
+            } public String getName() {<br />
+            return name;<br />
+            }<br />
+
+            public void setName(String name) {<br />
+            this.name = name;<br />
+            }<br />
+
+            public String getLastName() {<br />
+            return lastName;<br />
+            }<br />
+
+            public void setLastName(String lastName) {<br />
+            this.lastName = lastName;<br />
+            }<br />
+            }<br />
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFour">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFour"
+            aria-expanded="false"
+            aria-controls="flush-collapseFour"
+          >
+            Ejercicio 4
+          </button>
+        </h2>
+        <div
+          id="flush-collapseFour"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingFour"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              4-Realizar un programa el cual solicite el nombre de una ciudad
+              capital y el país. Al finalizar debe imprimir en pantalla el
+              siguiente mensaje "La ciudad [Nombre de la Ciudad], es la capital
+              del país [Nombre del País]
+            </h6>
+            import java.util.Scanner;<br />
+
+            public class Main {<br />
+            public static void main(String[] args){<br />
+            String pais;<br />
+            String capital;<br />
+            Scanner dato= new Scanner(System.in);<br />
+            System.out.println("Ingrese un pais:");<br />
+            pais= dato.nextLine();<br />
+            System.out.println("Ingrese la capital del pais seleccionado:");<br />
+            capital= dato.nextLine();<br />
+            Mundo par1= new Mundo(pais,capital);<br />
+            <br />
+            public class Mundo {<br />
+            private String pais;<br />
+            private String capital;<br />
+
+            public Mundo(String pais, String capital) {<br />
+            this.pais = pais;<br />
+            this.capital = capital;<br />
+            System.out.println("El pais seleccionado fue: "+pais+" y su capital
+            es: "+capital);<br />
+            }<br />
+            }<br />
+
+            }<br />
+
+            }<br />
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFive">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFive"
+            aria-expanded="false"
+            aria-controls="flush-collapseFive"
+          >
+            Ejercicio 5
+          </button>
+        </h2>
+        <div
+          id="flush-collapseFive"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingFive"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              5-Realizar un programa el cual solicite el nombre de su mascota,
+              edad de la mascota, el tipo de mascota y su nombre completo. Al
+              finalizar el sistema debe e imprimir en pantalla el siguiente
+              mensaje: [Nombre de Mascota] es un(a) [Tipo de Mascota], el cual,
+              tiene [Edad de la Mascota] años de edad y [Nombre Completo] es
+              actualmente su dueño(a).
+            </h6>
+            import java.util.Scanner;<br />
+
+            public class Main {<br />
+            public static void main(String[] args) {<br />
+            Scanner dato= new Scanner(System.in);<br />
+            String name;<br />
+            String lastName;<br />
+            String petName;<br />
+            int petAge;<br />
+            String petKind;<br />
+
+            System.out.println("Ingresa tu Nombre: ");<br />
+            name= dato.nextLine();<br />
+            System.out.println("Ingresa tus Apellidos: ");<br />
+            lastName= dato.nextLine();<br />
+            User usuario1= new User(name,lastName);<br />
+
+            System.out.println("Ingresa el Nombre de tu mascota: ");<br />
+            petName= dato.nextLine();<br />
+            System.out.println("Ingresa el tipo de mascota que tienes: ");<br />
+            petKind= dato.nextLine();<br />
+            System.out.println("Ingresa la edad de tu mascota: ");<br />
+            petAge= dato.nextInt();<br />
+            Mascota mascota1= new Mascota(petName,petAge,petKind);<br />
+
+            System.out.println(mascota1.getName()+" Es un(a)
+            "+mascota1.getKind()+", el cual, tiene "+mascota1.getAge()+" años de
+            edad y "+usuario1.fullName()+" es su dueño(a).");<br />
+            }<br />
+
+            }<br />
+            <br />
+            public class Mascota {<br />
+
+            private String name;<br />
+            private int age;<br />
+            private String kind;<br />
+
+            public String getName() {<br />
+            return name;<br />
+            } public void setName(String name) {<br />
+            this.name = name;<br />
+            }<br />
+
+            public int getAge() {<br />
+            return age;<br />
+            }<br />
+
+            public void setAge(int age) {<br />
+            this.age = age;<br />
+            }<br />
+
+            public String getKind() {<br />
+            return kind;<br />
+            }<br />
+
+            public void setKind(String kind) {<br />
+            this.kind = kind;<br />
+            }<br />
+
+            public Mascota(String name, int age, String kind) {<br />
+            this.name = name;<br />
+            this.age = age;<br />
+            this.kind = kind;<br />
+            }<br />
+            }<br />
+            <br />
+            <br />
+
+            public class User {<br />
+
+            private String name;<br />
+            private String lastName;<br />
+
+            User(String name, String lastName){<br />
+
+            this.name=name;<br />
+            this.lastName=lastName;<br />
+            } public String fullName(){<br />
+            return name+" "+lastName;<br />
+            }<br />
+
+            public String getName() {<br />
+            return name;<br />
+            }<br />
+
+            public void setName(String name) {<br />
+            this.name = name;<br />
+            }<br />
+
+            public String getLastName() {<br />
+            return lastName;<br />
+            }<br />
+
+            public void setLastName(String lastName) {<br />
+            this.lastName = lastName;<br />
+            }<br />
+            }<br />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>Realizado por: Daniel Felipe Betancur Córdoba</p>
+      <p>Derechos recervados</p>
+      <div class="enlacesFooter">
+        <a href="https://mail.google.com/mail/u/0/?pli=1#inbox?compose=new">
+          <img src="img\mail.png" alt="correo electronico" />
+        </a>
+        <a href="https://www.linkedin.com/in/daniel-felipe-betancur-cordoba/">
+          <img src="img\linkedin.png" alt="linkedin" />
+        </a>
+        <a href="https://github.com/Betancur1991">
+          <img src="img\github.png" alt="github" />
+        </a>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

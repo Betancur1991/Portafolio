@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css\base.css" />
+    <link rel="stylesheet" href="css\javaTaller.css" />
+    <link rel="stylesheet" href="css\array.css">
+
+    <title>Portafolio Daniel Felipe Betancur</title>
+  </head>
+  <body style="background-image: url('img/java.jfif'); background-size: cover">
+    <nav id="navegador">
+      <ul>
+        <li>
+          <a href="index.html"><img src="img\home.png" alt="home" />Home</a>
+        </li>
+        <li><a href="ejerciciosJava.html">Ejercicios Java</a></li>
+        <li>
+          <a
+            href="hoja_de_vida\HOJA_DE_VIDA_DF.pdf"
+            download="HOJA_DE_VIDA_DF.pdf"
+            >Descargar Hoja de Vida.PDF</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne"
+            aria-expanded="false"
+            aria-controls="flush-collapseOne"
+          >
+            Ejercicio 1
+          </button>
+        </h2>
+        <div
+          id="flush-collapseOne"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingOne"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              1-Crear un vector de tipo Entero con 5 posiciones, llenarlo con
+              información solicitada al usuario. Después de recoger toda la
+              información, se requiere imprimir el índice de cada posición en el
+              arreglo con su valor de la siguiente manera:
+            </h6>
+            <img src="img\arreglos1.PNG" alt="tabla" />
+            <br />
+            import java.util.Scanner;<br />
+
+            public class Main {<br />
+            public static void main(String[] args) {<br />
+            int[] vector = new int[5];<br />
+            Scanner scanner = new Scanner(System.in);<br />
+
+            for (int i = 0; i < vector.length; i++) {<br />
+            System.out.print("Ingrese el valor para la posición " + i + " =
+            ");<br />
+            vector[i] = scanner.nextInt();<br />
+            }<br />
+
+            System.out.println("El contenido del vector es:");<br />
+
+            for (int i = 0; i < vector.length; i++) {<br />
+            System.out.println("°[" + i + "] = " + vector[i]);<br />
+            }<br />
+            }<br />
+            }<br />
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo"
+            aria-expanded="false"
+            aria-controls="flush-collapseTwo"
+          >
+            Ejercicio 2
+          </button>
+        </h2>
+        <div
+          id="flush-collapseTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingTwo"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              2.Crear un arreglo de números enteros de 20 posiciones, el cual,
+              debe ser llenado con números aleatorios entre 1 y 100; después de
+              haber llenado dicho arreglo, se debe volver a recorrer utilizando
+              un ciclo diferente al que se usó para llenarse e imprimir los
+              números pares e impares. Ejemplo <br />
+              Números pares: 2, 4, 6, 8, 10 <br />
+              Números impares: 1, 3, 5, 7, 9 <br />
+            </h6>
+            import java.util.Random;<br />
+            public class Main {<br />
+            public static void main(String[] args) {<br />
+            Random rand = new Random();<br />
+            int [] numeros=new int[20];<br />
+            for (int i=0;i< numeros.length;i++){<br />
+            numeros[i]= rand.nextInt(100) + 1;<br />
+            }<br />
+
+            System.out.print("Números pares: ");<br />
+            for (int i=0;i< numeros.length;i++){<br />
+            if (numeros[i]%2==0){<br />
+            System.out.print(numeros[i]+"-");<br />
+            }<br />
+
+            }<br />
+            System.out.println();<br />
+            System.out.print("Números impares: ");<br />
+            for (int i=0;i< numeros.length;i++){<br />
+            if (numeros[i]%2!=0){<br />
+            System.out.print(numeros[i]+"-");<br />
+            }<br />
+
+            }<br />
+            }<br />
+            }<br />
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree"
+            aria-expanded="false"
+            aria-controls="flush-collapseThree"
+          >
+            Ejercicio 3
+          </button>
+        </h2>
+        <div
+          id="flush-collapseThree"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingThree"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              3.Imprimir los números primos del 1 al 1000, el resultado debe ser
+              buscado de forma matemática.
+            </h6>
+            public class Main {<br />
+            public static void main(String[] args) {<br />
+            int [] numeros= new int [1000];<br />
+            int contador=0;<br />
+            for (int i=1;i<=1000;i++){<br />
+            numeros[i-1]=i;<br />
+            }<br />
+
+            for (int numero:numeros) {<br />
+            for (int numero1:numeros) {<br />
+            if (numero%numero1==0){<br />
+            contador++;<br />
+            }<br />
+            }<br />
+            if (contador==2){<br />
+            System.out.print(numero+"-");<br />
+            }<br />
+            contador=0;<br />
+            }<br />
+            }<br />
+            }<br />
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFour">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFour"
+            aria-expanded="false"
+            aria-controls="flush-collapseFour"
+          >
+            Ejercicio 4
+          </button>
+        </h2>
+        <div
+          id="flush-collapseFour"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingFour"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              4.Dada la siguiente matriz bidimensional, el cual debe de quemar
+              en el código
+            </h6>
+            <br />
+            <img src="img\arreglo41.PNG" alt="matriz" /><br />
+            <h6>
+              Utilizando el conocimiento adquirido, a excepción de hacerlo de
+              forma manual, imprima la siguiente matriz bidimensional.
+            </h6>
+            <br />
+            <img src="img\arreglo42.PNG" alt="matriz" /><br />
+            public class Main {<br />
+            public static void main(String[] args) {<br />
+            int[][] matriz = {{1, 2, 3,4,5}, {6,7,8,9,10}, {11,12,13,14,15},
+            {16,17,18,19,20}};<br />
+
+            for (int i=0;i<4;i++){<br />
+            for (int j=0;j<5;j++){<br />
+            System.out.print(matriz[i][j]+" ");<br />
+            }<br />
+            System.out.println();<br />
+            }<br />
+            System.out.println("___________");<br />
+            System.out.println("___________");<br />
+            for (int i=0;i<4;i++){<br />
+            if((i+1)%2!=0){<br />
+            for (int j=0;j<5;j++){<br />
+            System.out.print(matriz[i][j]+" ");<br />
+            }<br />
+            System.out.println();<br />
+            }<br />
+            if((i+1)%2==0){<br />
+            for (int j=4;j>=0;j--){<br />
+            System.out.print(matriz[i][j]+" ");<br />
+            }<br />
+            System.out.println();<br />
+            }<br />
+            }<br />
+            }<br />
+            }<br />
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFive">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFive"
+            aria-expanded="false"
+            aria-controls="flush-collapseFive"
+          >
+            Ejercicio 5
+          </button>
+        </h2>
+        <div
+          id="flush-collapseFive"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingFive"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>5-Se debe de imprimir el siguiente cuadro</h6>
+            <br />
+            <img src="img\arreglos5.PNG" alt="tablaMultiplicar" id="punto5" /><br />
+            import java.util.Scanner;<br />
+
+            public class Main { public static void main(String[] args) {<br />
+            System.out.println("
+            |_______________________COLUMNAS____________________________|");<br />
+            System.out.println("____|__0__|__1__|__2__|__3__|__4__|__5__|__6__|__7__|__8__|__9__|");<br />
+            System.out.println(" |0
+            |_1x1_|_2x1_|_3x1_|_4x1_|_5x1_|_6x1_|_7x1_|_8x1_|_9x1_|_10x1|");<br />
+            System.out.println(" |1
+            |_1x2_|_2x2_|_3x2_|_4x2_|_5x2_|_6x2_|_7x2_|_8x2_|_9x2_|_10x2|");<br />
+            System.out.println("F|2
+            |_1x3_|_2x3_|_3x3_|_4x3_|_5x3_|_6x3_|_7x3_|_8x3_|_9x3_|_10x3|");<br />
+            System.out.println("I|3
+            |_1x4_|_2x4_|_3x4_|_4x4_|_5x4_|_6x4_|_7x4_|_8x4_|_9x4_|_10x4|");<br />
+            System.out.println("L|4
+            |_1x5_|_2x5_|_3x5_|_4x5_|_5x5_|_6x5_|_7x5_|_8x5_|_9x5_|_10x5|");<br />
+            System.out.println("A|5
+            |_1x6_|_2x6_|_3x6_|_4x6_|_5x6_|_6x6_|_7x6_|_8x6_|_9x6_|_10x6|");<br />
+            System.out.println("S|6
+            |_1x7_|_2x7_|_3x7_|_4x7_|_5x7_|_6x7_|_7x7_|_8x7_|_9x7_|_10x7|");<br />
+            System.out.println(" |7
+            |_1x8_|_2x8_|_3x8_|_4x8_|_5x8_|_6x8_|_7x8_|_8x8_|_9x8_|_10x8|");<br />
+            System.out.println(" |8
+            |_1x9_|_2x9_|_3x9_|_4x9_|_5x9_|_6x9_|_7x9_|_8x9_|_9x9_|_10x9|");<br />
+            System.out.println(" |9
+            |_1x10|_2x10|_3x10|_4x10|_5x10|_6x10|_7x10|_8x10|_9x10|10x10|");<br />
+            int[][] matriz = new int[10][10];<br />
+            for (int i=0;i<10;i++){<br />
+            for (int j=0;j<10;j++){<br />
+            matriz[i][j]=(i+1)*(j+1);<br />
+            }<br />
+            }<br />
+            int salida=10;<br />
+            do {<br />
+            System.out.println("Digita el numero de la fila donde se encuentra
+            la multiplicación que deseas conocer: ");<br />
+            Scanner scanner=new Scanner(System.in);<br />
+            int selectorFila= scanner.nextInt();<br />
+            System.out.println("Digita el numero de la columna donde se
+            encuentra la multiplicación que deseas conocer:");<br />
+            int selectorColumna= scanner.nextInt();<br />
+            System.out.println("Elegiste la fila "+selectorFila+" y la columna
+            "+selectorColumna+" que corresponde a la multiplicacion de:");<br />
+            System.out.println((selectorColumna+1)+" x "+(selectorFila+1)+" =
+            "+matriz[selectorFila][selectorColumna]);<br />
+            System.out.println("Deseas segir multiplicando 1 y enter para si o 2
+            y enter para no: ");<br />
+            salida=scanner.nextInt();<br />
+            }while (salida!=2);<br />
+            }<br />
+            }<br />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>Realizado por: Daniel Felipe Betancur Córdoba</p>
+      <p>Derechos recervados</p>
+      <div class="enlacesFooter">
+        <a href="https://mail.google.com/mail/u/0/?pli=1#inbox?compose=new">
+          <img src="img\mail.png" alt="correo electronico" />
+        </a>
+        <a href="https://www.linkedin.com/in/daniel-felipe-betancur-cordoba/">
+          <img src="img\linkedin.png" alt="linkedin" />
+        </a>
+        <a href="https://github.com/Betancur1991">
+          <img src="img\github.png" alt="github" />
+        </a>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

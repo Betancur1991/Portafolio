@@ -1,0 +1,1574 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css\base.css" />
+    <link rel="stylesheet" href="css\javaTaller.css" />
+
+    <title>Portafolio Daniel Felipe Betancur</title>
+  </head>
+  <body style="background-image: url('img/java.jfif'); background-size: cover">
+    <nav id="navegador">
+      <ul>
+        <li>
+          <a href="index.html"><img src="img\home.png" alt="home" />Home</a>
+        </li>
+        <li><a href="ejerciciosJava.html">Ejercicios Java</a></li>
+        <li>
+          <a
+            href="hoja_de_vida\HOJA_DE_VIDA_DF.pdf"
+            download="HOJA_DE_VIDA_DF.pdf"
+            >Descargar Hoja de Vida.PDF</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne"
+            aria-expanded="false"
+            aria-controls="flush-collapseOne"
+          >
+            Ejercicio 1
+          </button>
+        </h2>
+        <div
+          id="flush-collapseOne"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingOne"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              1-Realizar un programa en el cual se solicite la edad de una
+              persona. Si la persona es mayor o igual a 18 años, deberá mostrar
+              en pantalla: Usted es mayor de edad.
+            </h6>
+            <br />
+            import java.util.Scanner;<br />
+
+public class Main {<br />
+    public static void main(String[] args) {<br />
+        int edad;<br />
+        Scanner dato= new Scanner(System.in);<br />
+        System.out.println("Ingrese su edad");<br />
+        edad= dato.nextInt();<br />
+        User user1=new User(edad);<br />
+        System.out.println(user1.mayorEdad());<br />
+
+
+    }<br />
+}<br />
+public class User {<br />
+    private int age;<br />
+
+    public User(int age) {<br />
+        this.age = age;<br />
+    }<br />
+    public String mayorEdad(){<br />
+        if (age>=18){<br />
+            return "Usted es mayor de edad.";<br />
+        }else {<br />
+            return "Usted aún es un niño(a).";<br />
+        }<br />
+    }<br />
+}<br />
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo"
+            aria-expanded="false"
+            aria-controls="flush-collapseTwo"
+          >
+            Ejercicio 2
+          </button>
+        </h2>
+        <div
+          id="flush-collapseTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingTwo"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              2-Realizar un programa en el cual se solicite la edad de una
+              persona. Si la persona es menor a 18 años, deberá mostrar en
+              pantalla: Usted aún es un niño(a).
+            </h6>
+            import java.util.Scanner;<br>
+
+public class Main {<br>
+    public static void main(String[] args) {<br>
+        int edad;<br>
+        Scanner dato= new Scanner(System.in);<br>
+        System.out.println("Ingrese su edad");<br>
+        edad= dato.nextInt();<br>
+        User user1=new User(edad);<br>
+        System.out.println(user1.mayorEdad());<br>
+
+
+    }<br>
+}<br>
+<br>
+<br>
+public class User {<br>
+    private int age;<br>
+
+    public User(int age) {<br>
+        this.age = age;<br>
+    }<br>
+    public String mayorEdad(){<br>
+        if (age>=18){<br>
+            return "Usted es mayor de edad.";<br>
+        }else {<br>
+            return "Usted aún es un niño(a).";<br>
+        }<br>
+    }<br>
+}<br>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree"
+            aria-expanded="false"
+            aria-controls="flush-collapseThree"
+          >
+            Ejercicio 3
+          </button>
+        </h2>
+        <div
+          id="flush-collapseThree"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingThree"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              3-Realizar un programa en el cual se solicite el nombre, apellidos
+              y edad de la persona. Si la persona es mayor o igual a 18 años,
+              entonce se deberá imprimir en pantalla [Nombre completo] usted es
+              mayor de edad, por lo tanto puede entrar a la fiesta. Si la edad
+              de la persona es menor que 18 años, entonces, deberá imprimirse el
+              siguiente mensaje: [Nombre completo] usted es menor de edad, por
+              lo tanto, no puede entrar a la fiesta, por favor devuélvase a su
+              casa.
+            </h6>
+            import java.util.Scanner;<br>
+
+public class Main {<br>
+    public static void main(String[] args) {<br>
+        int edad;<br>
+        String name, lastName;<br>
+        Scanner dato= new Scanner(System.in);<br>
+        System.out.println("Ingrese su nombre");<br>
+        name= dato.nextLine();<br>
+        System.out.println("Ingrese su apellido");<br>
+        lastName= dato.nextLine();<br>
+        System.out.println("Ingrese su edad");<br>
+        edad= dato.nextInt();<br>
+        User user1=new User(edad,name,lastName);<br>
+        System.out.println(user1.mayorEdad());<br>
+
+
+
+    }<br>
+}<br>
+<br>
+<br>
+public class User {<br>
+    private int age;<br>
+    private String name;<br>
+    private String lastName;<br>
+
+    public User(int age,String name,String lastName) {<br>
+        this.age = age;<br>
+        this.name=name;<br>
+        this.lastName=lastName;<br>
+    }<br>
+
+
+    public String mayorEdad(){<br>
+        if (age>=18){<br>
+            return name+" "+lastName+" usted es mayor de edad, por lo tanto puede entrar a la fiesta.";<br>
+        }else {<br>
+            return name+" "+lastName+" usted es menor de edad, por lo tanto, no puede entrar a la fiesta, por favor devuélvase a su casa.";<br>
+        }<br>
+    }<br>
+}<br>
+<br>
+<br>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFour">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFour"
+            aria-expanded="false"
+            aria-controls="flush-collapseFour"
+          >
+            Ejercicio 4
+          </button>
+        </h2>
+        <div
+          id="flush-collapseFour"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingFour"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              4-La video tienda que presta sus servicios de alquiler de
+              películas a los usuarios del barrio el Porvenir, requiere de una
+              aplicación que permita registrar el alquiler de las películas que
+              adquieren sus usuarios. Para cada usuario se debe permitir la
+              opción de alquilar película, consultar películas disponibles y
+              recibir película en la video tienda con la opción de realizar
+              anotaciones sobre estas si se llegan a presentar daños u otra
+              novedad sobre la película.
+            </h6>
+            package MENU;<br>
+import java.util.ArrayList;<br>
+import java.util.Scanner;<br>
+public class Menu {<br>
+
+     private static ArrayList<String> peliculasDisponibles=new ArrayList<>();<br>
+
+    public static void peliculas(){<br>
+        peliculasDisponibles.add("Back to the Future 1");<br>
+        peliculasDisponibles.add("Back to the Future 2");<br>
+        peliculasDisponibles.add("Back to the Future 3");<br>
+        peliculasDisponibles.add("Rambo");<br>
+        peliculasDisponibles.add("Terminator");<br>
+    }<br>
+    public static void showMenu(){<br>
+
+        System.out.println("Welcome to My Video Store");<br>
+        System.out.println("Selecciona la opción deseada");<br>
+
+
+        int response = 0;<br>
+        do {<br>
+            System.out.println("1. Propietario");<br>
+            System.out.println("2. Cliente");<br>
+            System.out.println("0. Salir");<br>
+
+            Scanner sc = new Scanner(System.in);<br>
+            response = Integer.valueOf(sc.nextLine());<br>
+
+            switch (response){<br>
+                case 1:<br>
+                    System.out.println("Como estas Jefe selecciona el numeral deseado:");<br>
+                    System.out.println("1- Para agregar peliculas al catalogo");<br>
+                    System.out.println("2- Para retirar peliculas del catalogo");<br>
+                    int select=sc.nextInt();<br>
+                    switch (select){<br>
+                        case 1:<br>
+                            Scanner agrega = new Scanner(System.in);<br>
+                            System.out.println("ingresa el nombre de la pelicula a agregar:");<br>
+                            String new_peli=agrega.nextLine();<br>
+                            System.out.println("Se agrego la pelicula: "+new_peli);<br>
+                            peliculasDisponibles.add(new_peli);<br>
+                            break;<br>
+                        case 2:<br>
+                            Scanner retira = new Scanner(System.in);<br>
+                            System.out.println("ingresa el nombre de la pelicula a retirar:");<br>
+                            String remove_peli=retira.nextLine();<br>
+                            System.out.println("Se retiro la pelicula: "+remove_peli);<br>
+                            peliculasDisponibles.remove(remove_peli);<br>
+                            break;<br>
+                        default:<br>
+                            System.out.println("opción no valida");<br>
+                    }
+                    break;<br>
+                case 2:<br>
+                    response = 0;<br>
+                    showPatientMenu();<br>
+
+                    break;<br>
+                case 0:<br>
+                    System.out.println("Thank you for you visit");<br>
+                    break;<br>
+                default:<br>
+                    System.out.println("Please select a correct answer");<br>
+            }<br>
+        }while (response != 0);<br>
+
+}
+
+    static void showPatientMenu(){<br>
+        int response = 0;<br>
+        do {<br>
+            System.out.println("\n");<br>
+            System.out.println("Opciones disponibles:");<br>
+            System.out.println("1. Alquilar Peliculas");<br>
+            System.out.println("2. Consultar Peliculas Disponiobles");<br>
+            System.out.println("0. Return");<br>
+
+            Scanner sc = new Scanner(System.in);<br>
+            response = Integer.valueOf(sc.nextLine());<br>
+            int correcto=0;<br>
+
+            switch (response){<br>
+                case 1:<br>
+                    System.out.println( "Ingrese el nombre de la pelicula a Alquilar");<br>
+                    String pelicula= sc.nextLine();<br>
+                    for (String peli : peliculasDisponibles) {<br>
+                        peli=peli.toLowerCase();<br>
+                        if (peli.contains(pelicula.toLowerCase())){<br>
+                            correcto++;<br>
+                        }<br>
+                    }<br>
+                    if (correcto!=0){<br>
+                        System.out.println("La pelicula se alquilo exitosamente");<br>
+                    }else {<br>
+                        System.out.println("La pelicula ingresada no se encuentra dentro de las peliculas disponibles");<br>
+                    }<br>
+                    break;<br>
+                case 2:<br>
+
+                    int i=1;<br>
+                    for (String peli : peliculasDisponibles) {<br>
+                        System.out.println(i+" "+peli);<br>
+                        i++;<br>
+                    }<br>
+                    break;<br>
+                case 0:<br>
+                    showMenu();<br>
+                    break;<br>
+            }<br>
+        }while (response != 0);<br>
+    }<br>
+
+}<br>
+<br>
+<br>
+import static MENU.Menu.*;<br>
+public class Main {<br>
+    public static void main(String[] args) {<br>
+
+        peliculas();<br>
+        showMenu();<br>
+    }<br>
+}<br>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFive">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFive"
+            aria-expanded="false"
+            aria-controls="flush-collapseFive"
+          >
+            Ejercicio 5
+          </button>
+        </h2>
+        <div
+          id="flush-collapseFive"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingFive"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              5-La Droguería Mi Salud presta sus servicios en la localidad de
+              Suba y requiere una aplicación para poder facturar los productos
+              que vende a sus clientes y para ello, los productos tienen unas
+              características que deben indicársele al cliente para que pueda
+              escoger el producto a comprar. Para cada cliente, se tienen las
+              opciones de compra de producto, consulta de precios por producto y
+              devoluciones en caso de que se presenten.
+            </h6>
+            import java.util.Scanner;<br>
+import java.util.ArrayList;<br>
+
+public class Main {<br>
+    public static void main(String[] args) {<br>
+        int opcion;<br>
+        Producto product=new Producto();<br>
+        ArrayList<Producto> listado_productos=product.crearListaProductos();<br>
+        do {<br>
+            opcion=Menu.showMenu();<br>
+            switch (opcion){<br>
+                case 1:<br>
+                    int seguir_comprando;<br>
+                    double total_pagar=0;<br>
+                    do {<br>
+                        System.out.println("Ingresa el nombre del producto a comprar");<br>
+                        Scanner name = new Scanner(System.in);<br>
+                        String nombre_producto=name.nextLine();<br>
+                        double precio=0;<br>
+
+                        for (Producto articulo: listado_productos) {<br>
+                            if (articulo.getNombre_producto().toLowerCase().contains(nombre_producto.toLowerCase())){<br>
+                                System.out.println("El producto seleccionado fue "+articulo.getNombre_producto()+"\n");<br>
+                                precio= articulo.getPrecio_producto();<br>
+                                break;<br>
+                            }<br>
+                        }<br>
+                        total_pagar=total_pagar+precio;<br>
+                        System.out.println("Ingresa 9 y enter para ir a pagar, si desea seguir comprando Ingrese 1 y enter" );<br>
+                        seguir_comprando= name.nextInt();<br>
+                    }while(seguir_comprando!=9);<br>
+                    System.out.println("El valor total a pagar es de $"+total_pagar);<br>
+
+                    break;<br>
+                case 2:<br>
+                    for (Producto articulo: listado_productos) {<br>
+                        System.out.println(articulo.getNombre_producto()+" $"+articulo.getPrecio_producto());<br>
+                    }<br>
+                    int out;<br>
+                    do {<br>
+                        System.out.println("Preciona 9 y enter para salir de la tienda, de lo contrario preciona 1 y enter para volver al menu inicial." );<br>
+                        Scanner select = new Scanner(System.in);<br>
+                        out=select. nextInt();<br>
+                        if (out==9){<br>
+                            opcion=0;<br>
+                        }<br>
+                        switch (out){<br>
+                            case 9:<br>
+                            case 1:<br>
+                                System.out.println("opcion valida");<br>
+                                out=9;<br>
+                                break;<br>
+                            default:<br>
+                                System.out.println("la opcion ingresada no es valida");<br>
+                        }<br>
+                    }while (out!=9);<br>
+                    break;<br>
+
+                case 3:<br>
+                    System.out.println("Ingrese la causa de devolucion del producto");<br>
+                    Scanner sc = new Scanner(System.in);<br>
+                    String causa= sc.nextLine();<br>
+                    System.out.println("Daremos respuesta a su reclamación en maximo 2 días.\nPedimos disculpas por las molestias ocacionadas." );<br>
+                    do {<br>
+                        System.out.println("Preciona 9 y enter para salir de la tienda, de lo contrario preciona 1 y enter para volver al menu inicial." );<br>
+                        Scanner select = new Scanner(System.in);<br>
+                        out=select. nextInt();<br>
+                        if (out==9){<br>
+                            opcion=0;<br>
+                        }<br>
+                        switch (out){<br>
+                            case 9:<br>
+                            case 1:<br>
+                                System.out.println("opcion valida");<br>
+                                out=9;<br>
+                                break;<br>
+                            default:<br>
+                                System.out.println("la opcion ingresada no es valida");<br>
+                        }<br>
+                    }while (out!=9);<br>
+                    break;<br>
+            }<br>
+        }while (opcion!=0);<br>
+
+        System.out.println("Agradecemos tu visita esperamos a ver cumplido tus expectativas");<br>
+    }<br>
+
+}<br>
+<br>
+<br>
+import java.util.Scanner;<br>
+
+public class Menu {<br>
+    public static int showMenu(){<br>
+
+        int seguir_comprando;<br>
+
+        System.out.println("Bienvenido a La Droguería Mi Salud");<br>
+        System.out.println("Selecciona la opción deseada");<br>
+
+
+        int response = 0;<br>
+            System.out.println("1. Comprar Poducto");<br>
+            System.out.println("2. Consulta nuestros precios y productos");<br>
+            System.out.println("3. Devolucion de productos");<br>
+            System.out.println("0. Salir");<br>
+
+            Scanner sc = new Scanner(System.in);<br>
+            response = Integer.valueOf(sc.nextLine());<br>
+
+            return response;<br>
+
+    }<br>
+}<br>
+<br>
+<br>
+import java.util.ArrayList;<br>
+
+public class Producto {<br>
+    private String nombre_producto;<br>
+    private double precio_producto;<br>
+
+    public Producto() {<br>
+        this.nombre_producto = nombre_producto;<br>
+        this.precio_producto = precio_producto;<br>
+    }<br>
+
+    public Producto(String nombre_producto, double precio_producto) {<br>
+        this.nombre_producto = nombre_producto;<br>
+        this.precio_producto = precio_producto;<br>
+    }<br>
+
+    public String getNombre_producto() {<br>
+        return nombre_producto;<br>
+    }<br>
+
+    public void setNombre_producto(String nombre_producto) {<br>
+        this.nombre_producto = nombre_producto;<br>
+    }<br>
+
+    public double getPrecio_producto() {<br>
+        return precio_producto;<br>
+    }<br>
+
+    public void setPrecio_producto(double precio_producto) {<br>
+        this.precio_producto = precio_producto;<br>
+    }<br>
+
+    public ArrayList<Producto> crearListaProductos() {<br>
+        ArrayList<Producto> lista = new ArrayList<>();<br>
+        lista.add(new Producto("Acetaminofen unidad", 1000));<br>
+        lista.add(new Producto("Dolex unidad", 2500));<br>
+        lista.add(new Producto("crema lubriderm 300 gr", 4000));<br>
+        lista.add(new Producto("ibuprofeno unidad", 2500));<br>
+        lista.add(new Producto("lilium 30 ml", 4000));<br>
+        lista.add(new Producto("Naproxeno unidad", 2500));<br>
+        lista.add(new Producto("Dexametasona 300 gr", 4000));<br>
+        return lista;<br>
+    }<br>
+
+
+}<br>
+<br>
+<br>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingSix">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseSix"
+            aria-expanded="false"
+            aria-controls="flush-collapseSix"
+          >
+            Ejercicio 6
+          </button>
+        </h2>
+        <div
+          id="flush-collapseSix"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingSix"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              6-El taller de motos "El Maquinista" recibe motocicletas de alto
+              cilindraje para realizar las respectivas revisiones y requiere una
+              aplicación que le permita registrar los servicios generados a sus
+              clientes. Para cada motocicleta se debe tener registro del ingreso
+              al taller y las observaciones por parte del cliente. También debe
+              existir registro de salida del taller con las novedades y otra de
+              arreglos hechos por el mecánico en caso de que se requiera
+              inventariar cambios repuestos en la motocicleta al entregarla.
+            </h6>
+            import java.math.BigInteger;<br>
+import java.util.ArrayList;<br>
+import java.util.Scanner;<br>
+
+public class Main {<br>
+    public static void main(String[] args) {<br>
+        int opcion;<br>
+        Scanner scanner = new Scanner(System.in);<br>
+        ArrayList<Moto> motos=new ArrayList<Moto>();<br>
+        ArrayList<Moto> retiradas=new ArrayList<Moto>();<br>
+        do {<br>
+            opcion=Menu.showMenu();<br>
+            switch (opcion){<br>
+                case 1:<br>
+
+
+                    boolean seguirCreando = true;<br>
+                    while (seguirCreando) {<br>
+                        System.out.println("Ingrese el nombre completo del dueño del vehículo:");<br>
+                        String nombre = scanner.nextLine();<br>
+                        scanner.nextLine();<br>
+
+                        System.out.println("Ingrese su numero celular:");<br>
+                        BigInteger cell = scanner.nextBigInteger();<br>
+                        scanner.nextLine();<br>
+
+                        System.out.println("Ingrese la marca de la moto:");<br>
+                        String marca = scanner.nextLine();<br>
+
+
+                        System.out.println("Ingrese el modelo de la moto:");<br>
+                        String modelo = scanner.nextLine();<br>
+
+
+                        System.out.println("Ingrese la placa de la moto:");<br>
+                        String placa = scanner.nextLine();<br>
+
+                        System.out.println("Ingrese la razon de ingreso del vehiculo:");<br>
+                        String razon = scanner.nextLine();<br>
+
+
+                        Moto moto = new Moto(nombre,cell,marca,modelo,placa,razon);<br>
+                        motos.add(moto);<br>
+
+                        System.out.println("Se ha ingresado la moto de Placa: " + moto.getPlaca() + "\nMarca:" + moto.getMarca() + "\nModelo: "+moto.getModelo());<br>
+
+                        System.out.println("¿Desea Ingresar otra moto? (s/n)");<br>
+                        String respuesta = scanner.nextLine();<br>
+
+                        seguirCreando = respuesta.equalsIgnoreCase("s");<br>
+                    }<br>
+                    break;<br>
+                case 2:<br>
+                    System.out.println("Ingrese la placa del vehículo a retirar:");<br>
+                    String placa_sacar = scanner.nextLine();<br>
+                    boolean eliminado = false;<br>
+                    for (Moto mot : motos) {<br>
+                        if (mot.getPlaca().equalsIgnoreCase(placa_sacar)) {<br>
+                            motos.remove(mot);<br>
+                            eliminado = true;<br>
+                            break;<br>
+                        }<br>
+                    }<br>
+                    if (eliminado) {<br>
+                        System.out.println("Ingrese las reparaciones realizadas al vehículo:");<br>
+                        String reparaciones = scanner.nextLine();<br>
+                        System.out.println("Ingrese si hay alguna novedad en el vehículo:");<br>
+                        String novedades = scanner.nextLine();<br>
+                        Moto moto = new Moto(placa_sacar,reparaciones,novedades);<br>
+                        retiradas.add(moto);<br>
+                        System.out.println("El vehiculo se ha retirado del taller.");<br>
+
+                    } else {<br>
+                        System.out.println("No se ha encontrado ningun vehiculo con esa placa.");<br>
+                    }<br>
+                    break;<br>
+                case 3:<br>
+                    System.out.println("Ingresa la clave de acceso para ingresar");<br>
+                    int contraseña = scanner.nextInt();<br>
+                    if (contraseña==1234){<br>
+                        for (Moto moto : motos) {<br>
+                            System.out.println("Dueño: " + moto.getFullNameOwner() + "\nPlaca: " + moto.getPlaca()+"\nMarca: "+moto.getMarca());<br>
+                        }<br>
+                        break;<br>
+                    }else {<br>
+                        System.out.println("Usted no tiene acceso a esta opción");<br>
+                        break;<br>
+                    }<br>
+                case 4:<br>
+                    System.out.println("Ingresa la clave de acceso para ingresar");<br>
+                    contraseña = scanner.nextInt();<br>
+                    if (contraseña==1234){<br>
+                        for (Moto moto : retiradas) {<br>
+                            System.out.println("Reparaciones: " + moto.getRefacciones() + "\nPlaca: " + moto.getPlaca()+"\nNovedades: "+moto.getNovedades());<br>
+                        }<br>
+                        break;<br>
+                    }else {<br>
+                        System.out.println("Usted no tiene acceso a esta opción");<br>
+                        break;<br>
+                    }<br>
+                case 0:<br>
+                    opcion=0;<br>
+                    break;<br>
+                default:<br>
+                    System.out.println("La opcion ingresada no es valida");<br>
+                    break;<br>
+            }
+        }while (opcion!=0);<br>
+
+        System.out.println("Agradecemos tu visita esperamos a ver cumplido tus expectativas");<br>
+    }<br>
+}<br>
+<br>
+<br>
+import java.util.Scanner;<br>
+
+public class Menu {<br>
+    public static int showMenu(){<br>
+
+        int seguir_comprando;<br>
+
+        System.out.println("Bienvenido al taller el Maquinista");<br>
+        System.out.println("Selecciona la opción deseada");<br>
+
+
+        int response = 0;<br>
+        System.out.println("1. Ingresar Vehículo al taller");<br>
+        System.out.println("2. Sacar Vehículo del taller");<br>
+        System.out.println("3. Revisar vehículos que se encuentran en el taller");<br>
+        System.out.println("4. Listado de vehículos que han salido del taller");<br>
+        System.out.println("0. Salir");<br>
+
+        Scanner sc = new Scanner(System.in);<br>
+        response = Integer.valueOf(sc.nextLine());<br>
+
+        return response;<br>
+
+    }<br>
+}<br>
+<br>
+<br>
+import java.math.BigInteger;<br>
+
+public class Moto {<br>
+    private String fullNameOwner;<br>
+    private BigInteger phoneNumber;<br>
+    private String marca;<br>
+    private String modelo;<br>
+    private String placa;<br>
+    private String razon_ingreso;<br>
+    private String refacciones;<br>
+    private String novedades;<br>
+
+    public Moto(String fullNameOwner, BigInteger phoneNumber, String marca, String modelo, String placa, String razon_ingreso) {<br>
+        this.fullNameOwner = fullNameOwner;<br>
+        this.phoneNumber = phoneNumber;<br>
+        this.marca = marca;<br>
+        this.modelo = modelo;<br>
+        this.placa = placa;<br>
+        this.razon_ingreso= razon_ingreso;<br>
+    }
+
+    public Moto(String placa, String refacciones,String novedades) {<br>
+        this.placa = placa;<br>
+        this.refacciones = refacciones;<br>
+        this.novedades = novedades;<br>
+    }<br>
+
+    public String getFullNameOwner() {<br>
+        return fullNameOwner;<br>
+    }<br>
+
+    public String getRazon_ingreso() {<br>
+        return razon_ingreso;<br>
+    }<br>
+
+    public String getMarca() {<br>
+        return marca;<br>
+    }<br>
+
+    public String getModelo() {<br>
+        return modelo;<br>
+    }<br>
+
+    public String getPlaca() {<br>
+        return placa;<br>
+    }<br>
+
+    public String getRefacciones() {<br>
+        return refacciones;<br>
+    }<br>
+
+    public String getNovedades() {<br>
+        return novedades;<br>
+    }<br>
+
+}<br>
+<br>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingSeven">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseSeven"
+            aria-expanded="false"
+            aria-controls="flush-collapseSeven"
+          >
+            Ejercicio 7
+          </button>
+        </h2>
+        <div
+          id="flush-collapseSeven"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingSeven"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              7-La Secretaría de Salud Municipal requiere de una aplicación que
+              le permita calcular el IMC (Índice de masa corporal) y requiere
+              los datos peso en kilogramos y estatura en metros Para cada
+              persona encuestada adicional a los datos suministrados, debe
+              mostrar el resultado para cada uno y establecer en qué rango se
+              encuentra (bajo peso, normal, sobrepeso y obeso).
+            </h6>
+            import java.util.Scanner;<br>
+
+public class Main {<br>
+    public static void main(String[] args) {<br>
+        int opcion=1;<br>
+        Scanner scanner = new Scanner(System.in);<br>
+        do {<br>
+            System.out.println("Bienvenido, deseas calcular el IMC (Índice de masa corporal) (Escribe si o No y presiona enter)");<br>
+            String respuesta=scanner.nextLine();<br>
+            String fullName,cedula;<br>
+            double altura,peso;<br>
+            if (respuesta.toLowerCase().equals("si")){<br>
+                System.out.println("hola, ¿Cual es tu nombre y apellidos? ");<br>
+                fullName=scanner.nextLine();<br>
+                System.out.println("¿Cual es tu numero de cedula? ");<br>
+                cedula=scanner.nextLine();<br>
+                System.out.println("¿Cual es tu estatura en metros? ");<br>
+                altura=scanner.nextDouble();<br>
+                System.out.println("¿Cual es tu peso en kilos? ");<br>
+                peso=scanner.nextDouble();<br>
+                Persona persona = new Persona(fullName,cedula,peso,altura);<br>
+                System.out.println(persona.mostrarIMC());<br>
+                System.out.println("Deseas calcular de nuevo tu IMC ingresa si y enter para continuar o no y enter para salir ");<br>
+                scanner.nextLine();<br>
+                String select=scanner.nextLine();<br>
+                if (select.toLowerCase().equals("si")){<br>
+                    opcion=1;<br>
+                } else if (select.toLowerCase().equals("no")) {<br>
+                    System.out.println("Fue un placer ayudarte, vuelve pronto");<br>
+                    opcion=0;<br>
+                    break;<br>
+                }else {<br>
+                    System.out.println("La opción ingresada no esta habilitada, volveremos al menu inicial");<br>
+                }<br>
+
+            } else if (respuesta.toLowerCase().equals("no")) {<br>
+                System.out.println("Fue un placer ayudarte, vuelve pronto");<br>
+                opcion=0;<br>
+            }else {<br>
+                System.out.println("La opción ingresada no es valida, intenta de nuevo");<br>
+            }<br>
+
+
+        }while (opcion!=0);<br>
+    }<br>
+}<br>
+<br>
+<br>
+public class Persona {<br>
+    private String fullName;
+    private String cedula;<br>
+    private double peso;<br>
+    private double estatura;<br>
+
+    public Persona(String fullName, String cedula, double peso, double estatura) {<br>
+        this.fullName = fullName;<br>
+        this.cedula = cedula;<br>
+        this.peso = peso;<br>
+        this.estatura = estatura;<br>
+    }<br>
+
+
+    public String mostrarIMC() {<br>
+        double calculoIMC=(peso/(estatura*estatura));<br>
+        String resultado;<br>
+        if (calculoIMC<=18.4){<br>
+            resultado=fullName+" Estas en bajo peso, debes mejorar tu alimentación";<br>
+            return resultado;<br>
+        } else if (calculoIMC>18.4 && calculoIMC<=24.9) {<br>
+            resultado=fullName+" Tu peso es normal, eso es excelente, continua cuidando de tu alimentación";<br>
+            return resultado;<br>
+        } else if (calculoIMC>25 && calculoIMC<=29.9) {<br>
+            resultado=fullName+" Estas en sobrepeso, debes mejorar tu alimentación";<br>
+            return resultado;<br>
+        } else if (calculoIMC>30 && calculoIMC<=34.9) {<br>
+            resultado=fullName+" Estas en obesidad grado 1, debes mejorar tu alimentación ya que puedes tener problemas de salud";<br>
+            return resultado;<br>
+        }else if (calculoIMC>35 && calculoIMC<=39.9) {<br>
+           resultado=fullName+ "Estas en obesidad grado 2, debes mejorar tu alimentación ya que puedes tener problemas de salud";<br>
+            return resultado;<br>
+        }else{
+            resultado=fullName+" Estas en obesidad grado 3, debes buscar ayuda medica ya que tu grado de obesidad puede tener concecuencias fatales";<br>
+            return resultado;<br>
+        }<br>
+    }<br>
+
+}<br>
+<br>
+<br>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingEight">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseEight"
+            aria-expanded="false"
+            aria-controls="flush-collapseEight"
+          >
+            Ejercicio 8
+          </button>
+        </h2>
+        <div
+          id="flush-collapseEight"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingEight"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              8-El pastelero Don Carlos es el mejor pastelero de la ciudad y
+              requiere una aplicación que le permita registrar los pedidos de
+              los clientes en cuanto a las tortas que realiza. Cada torta tiene
+              unas características propias como sabor, cantidad (porciones) y
+              decoraciones). Se requiere que la aplicación permita registrar los
+              pedidos, las tortas disponibles y las ventas que se registren
+              diariamente.
+            </h6>
+            import java.util.ArrayList;<br>
+import java.util.Scanner;<br>
+
+public class Main {<br>
+    public static void main(String[] args) {<br>
+        Scanner scanner=new Scanner(System.in);<br>
+        int option=1;<br>
+        Menu menu=new Menu();<br>
+        Pasteles pasteles=new Pasteles();<br>
+        ArrayList<Pasteles>ventas=new ArrayList<Pasteles>();<br>
+        ArrayList<Pasteles>disponibles=new ArrayList<Pasteles>();<br>
+        disponibles=pasteles.pastelesDisponibles();<br>
+        boolean continuar=false;<br>
+        int contador;<br>
+        do {<br>
+            System.out.println("Bienvenido a Nuestra Pasteleria \nIngresa el numeral deseado y luego presiona enter");<br>
+            option= menu.menu();<br>
+            switch (option){<br>
+                case 1:<br>
+                    contador=1;<br>
+                    for (Pasteles disponible:disponibles) {<br>
+                        System.out.println("Torta numero "+contador);
+                        System.out.println("Tipo de decoración: "+disponible.getDecoracion());<br>
+                        System.out.println("Cantidad de porciones: "+disponible.getPorciones());<br>
+                        System.out.println("Sabor de la torta: "+disponible.getSabor());<br>
+                        System.out.println("Precio del producto: $"+disponible.getPrecio());<br>
+                        System.out.println("___________________");<br>
+                        System.out.println("___________________");<br>
+                        contador++;<br>
+                    }<br>
+                    System.out.println("Presiona enter para volver al menu inicial");<br>
+                    scanner.nextLine();<br>
+                    break;<br>
+                case 2:<br>
+                    System.out.println("Necesitas la torta para hoy, ingresa si o no mas enter");<br>
+                    String response=scanner.nextLine();<br>
+                    if (response.toLowerCase().equals("si")){<br>
+                        for (Pasteles disponible:disponibles) {<br>
+                            System.out.println("Tipo de decoración: "+disponible.getDecoracion());<br>
+                            System.out.println("Cantidad de porciones: "+disponible.getPorciones());<br>
+                            System.out.println("Sabor de la torta: "+disponible.getSabor());<br>
+                            System.out.println("Precio del producto: $"+disponible.getPrecio());<br>
+                            System.out.println("___________________");<br>
+                            System.out.println("___________________");<br>
+                            System.out.println("si esta es la torta que quieres marca si mas enter, de lo contrario marca no mas enter");<br>
+                            response=scanner.nextLine();<br>
+                            if (response.toLowerCase().equals("si")){<br>
+                                ventas.add(disponible);<br>
+                                disponibles.remove(disponible);<br>
+                                break;<br>
+                            } else if (response.toLowerCase().equals("no")) {<br>
+                                System.out.println("0k");<br>
+                            }else {<br>
+                                System.out.println("la opcion ingresada no es valida");<br>
+                            }<br>
+                        }<br>
+                    }else if (response.toLowerCase().equals("no")){<br>
+                        System.out.println("Selecciona las opciones que deseas para tu torta");<br>
+                        System.out.println("Ingresa el nombre completo del solicitante:");<br>
+                        String nombre=scanner.nextLine();<br>
+                        System.out.println("Ingresa la cedula del solicitante:");<br>
+                        String cedula=scanner.nextLine();<br>
+                        System.out.println("Ingresa el sabor (sabores disponibles Arequipe,chocolate y Mora:");<br>
+                        String sabor=scanner.nextLine();<br>
+                        if (sabor.toLowerCase().equals("arequipe")){<br>
+                            continuar=true;<br>
+                        }<br>
+                        if (sabor.toLowerCase().equals("chocolate")){<br>
+                            continuar=true;<br>
+                        }<br>
+                        if (sabor.toLowerCase().equals("mora")){<br>
+                            continuar=true;<br>
+                        }<br>
+                        if (continuar==false){<br>
+                            System.out.println("La opción seleccionada no esta disponible");<br>
+                            break;<br>
+                        }<br>
+                        continuar=false;<br>
+                        System.out.println("Ingresa el numero de porciones (porciones disponibles 8,12,25 y 32:");<br>
+                        int porciones=scanner.nextInt();<br>
+                        if (porciones==8){<br>
+                            porciones=8;<br>
+                            continuar=true;<br>
+                        }<br>
+                        if (porciones==12){<br>
+                            porciones=12;<br>
+                            continuar=true;<br>
+                        }<br>
+                        if (porciones==25){<br>
+                            porciones=25;<br>
+                            continuar=true;<br>
+                        }<br>
+                        if (porciones==32){<br>
+                            porciones=32;<br>
+                            continuar=true;<br>
+                        }<br>
+                        if (continuar==false){<br>
+                            System.out.println("La opción seleccionada no esta disponible");<br>
+                            break;<br>
+                        }<br>
+                        continuar=false;<br>
+                        scanner.nextLine();<br>
+                        System.out.println("Ingresa la decoración requerida (decoraciones disponibles Matrimonio, Cumpleaños y Personalizada:");<br>
+                        String decoracion=scanner.nextLine();<br>
+                        if (decoracion.toLowerCase().equals("matrimonio")){<br>
+                            continuar=true;<br>
+                            decoracion="media";<br>
+                        }<br>
+                        if (decoracion.toLowerCase().equals("cumpleaños")){<br>
+                            continuar=true;<br>
+                            decoracion="basica";<br>
+                        }<br>
+                        if (decoracion.toLowerCase().equals("personalizada")){<br>
+                            continuar=true;<br>
+                            decoracion="personalizada";<br>
+                        }<br>
+                        if (continuar==false){
+                            System.out.println("La opción seleccionada no esta disponible");<br>
+                            break;<br>
+                        }<br>
+                        Pasteles pastel=new Pasteles(nombre,cedula,sabor,porciones,decoracion);<br>
+                        System.out.println("Desea comprar el pastel de sabor: "+pastel.getSabor());<br>
+                        System.out.println("Decoración: "+pastel.getDecoracion());<br>
+                        System.out.println("Con número de porciones de: "+pastel.getPorciones());<br>
+                        System.out.println("Con un precio de: $"+pastel.obtenerPrecio());<br>
+                        System.out.println("Tu pedido esta bien y lo deseas comprar, si o no mas enter");<br>
+                        response=scanner.nextLine();<br>
+                        if (response.toLowerCase().equals("si")){<br>
+                            ventas.add(pastel);<br>
+                        } else if (response.toLowerCase().equals("no")) {<br>
+                            System.out.println("Selecciona lo que deseas hacer en el menu principal");<br>
+                        }else {<br>
+                            System.out.println("la seleccion realizada no es valida");<br>
+                        }<br>
+                    }<br>
+                case 3:<br>
+                    double ventasTotales=0;<br>
+                    for (Pasteles vendido:ventas) {<br>
+                        System.out.println("Has vendido un pastel de sabor: "+vendido.getSabor());<br>
+                        System.out.println("Con decoracion de: "+vendido.getDecoracion());<br>
+                        System.out.println("de : "+vendido.getPorciones()+" porciones");<br>
+                        System.out.println("a un precio de: "+vendido.getPrecio());<br>
+                        ventasTotales=ventasTotales+vendido.getPrecio();<br>
+                    }<br>
+                    System.out.println("Las ventas totales del dia de hoy son de: $"+ventasTotales);<br>
+            }
+        }while (option!=0);<br>
+    }<br>
+}<br>
+<br>
+<br>
+import java.util.Scanner;<br>
+
+public class Menu {<br>
+    int opcion;<br>
+    public int menu(){<br>
+        System.out.println("1. Ver listado de pasteles disponibles para venta inmediata.");<br>
+        System.out.println("2. Realiza tu pedido.");<br>
+        System.out.println("3. Ver ventas realizadas el dia de hoy.");<br>
+        System.out.println("0. Para salir del sistema.");<br>
+        Scanner scanner= new Scanner(System.in);<br>
+        opcion=scanner.nextInt();<br>
+        return opcion;<br>
+
+    }<br>
+}<br>
+<br>
+<br>
+import java.util.ArrayList;<br>
+
+public class Pasteles {<br>
+    private  String fullName;<br>
+    private  String cedula;<br>
+    private String sabor;<br>
+    private int porciones;<br>
+    private double precio;<br>
+    private String decoracion;<br>
+
+    public Pasteles(String fullName, String cedula, String sabor, int porciones, String decoracion) {<br>
+        this.fullName = fullName;<br>
+        this.cedula = cedula;<br>
+        this.sabor = sabor;<br>
+        this.porciones = porciones;<br>
+        this.decoracion = decoracion;<br>
+    }<br>
+
+    public Pasteles(String sabor, int porciones, String decoracion,double precio) {<br>
+        this.sabor = sabor;<br>
+        this.porciones = porciones;<br>
+        this.decoracion = decoracion;<br>
+        this.precio=precio;<br>
+    }
+    public Pasteles(String sabor, int porciones, String decoracion) {<br>
+        this.sabor = sabor;<br>
+        this.porciones = porciones;<br>
+        this.decoracion = decoracion;<br>
+    }<br>
+    public String getSabor() {<br>
+        return sabor;<br>
+    }<br>
+
+    public int getPorciones() {<br>
+        return porciones;<br>
+    }<br>
+
+    public double getPrecio() {<br>
+        return precio;<br>
+    }<br>
+
+    public String getDecoracion() {<br>
+        return decoracion;<br>
+    }<br>
+    public Pasteles() {<br>
+
+    }<br>
+    public double obtenerPrecio(){<br>
+        switch (porciones){<br>
+            case 8:<br>
+                precio=20000;<br>
+                break;<br>
+            case 12:<br>
+                precio=30000;<br>
+                break;<br>
+            case 25:<br>
+                precio=45000;<br>
+                break;<br>
+            case 32:<br>
+                precio=55000;<br>
+                break;<br>
+            default:<br>
+                System.out.println("Entrada invalida");<br>
+                precio=0;<br>
+                break;<br>
+        }<br>
+        switch (decoracion){<br>
+            case "basica":<br>
+                precio=precio+5000;<br>
+                break;<br>
+            case "media":<br>
+                precio=precio+10000;<br>
+                break;<br>
+            case "personalizada":<br>
+                precio=precio+20000;<br>
+                break;<br>
+            default:<br>
+                System.out.println("Entrada invalida");<br>
+                precio=0;<br>
+                break;<br>
+        }<br>
+        return precio;<br>
+    }<br>
+    public ArrayList pastelesDisponibles(){<br>
+        ArrayList<Pasteles> pasteles=new ArrayList<Pasteles>();<br>
+        Pasteles pastel1=new Pasteles("mora",8,"cumpleaños",25000);<br>
+        pasteles.add(pastel1);<br>
+        Pasteles pastel2=new Pasteles("arequipe",8,"cumpleaños",25000);<br>
+        pasteles.add(pastel2);<br>
+        Pasteles pastel3=new Pasteles("chocolate",8,"cumpleaños",25000);<br>
+        pasteles.add(pastel3);<br>
+        Pasteles pastel4=new Pasteles("mora",12,"cumpleaños",35000);<br>
+        pasteles.add(pastel4);<br>
+        Pasteles pastel5=new Pasteles("arequipe",12,"cumpleaños",35000);<br>
+        pasteles.add(pastel5);<br>
+        Pasteles pastel6=new Pasteles("chocolate",12,"matrimonio",35000);<br>
+        pasteles.add(pastel6);<br>
+        Pasteles pastel7=new Pasteles("arequipe",25,"cumpleaños",55000);<br>
+        pasteles.add(pastel7);<br>
+        Pasteles pastel8=new Pasteles("chocolate",32,"matrimonio",65000);<br>
+        pasteles.add(pastel8);<br>
+        return pasteles;<br>
+    }<br>
+
+
+}<br>
+<br>
+<br>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingNine">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseNine"
+            aria-expanded="false"
+            aria-controls="flush-collapseNine"
+          >
+            Ejercicio 9
+          </button>
+        </h2>
+        <div
+          id="flush-collapseNine"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingNine"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              9-El profesor de geometría está explicando a sus estudiantes las
+              fórmulas para calcular el área de diferentes figuras geométricas,
+              para ello requiere una aplicación que le facilite el ejercicio
+              solicitándole los valores al estudiante. La aplicación debe
+              permitir que el estudiante seleccione si desea calcular el área de
+              un rectángulo, triángulo o trapecio. No olvide solicitar los datos
+              necesarios para realizar cada cálculo y mostrar su respectivo
+              resultado.
+            </h6>
+            import java.util.Scanner;<br>
+public class Main {<br>
+    public static void main(String[] args) {<br>
+        Scanner scanner=new Scanner(System.in);<br>
+        int option=5;<br>
+        do {<br>
+            System.out.println("Ingresa el numero de la figura de la cual desea conocer el Area y presione enter: ");<br>
+            System.out.println("1. Rectángulo");<br>
+            System.out.println("2. Triángulo");<br>
+            System.out.println("3. Trapecio");<br>
+            System.out.println("0. Para Salir del programa");<br>
+            option=scanner.nextInt();<br>
+
+
+            if (option==1){<br>
+                System.out.println("Ingresa el lado 1 del rectangulo al que le vas a calcular el área: ");<br>
+                double base=scanner.nextDouble();<br>
+                System.out.println("Ingresa el lado 2 del rectangulo al que le vas a calcular el área: ");<br>
+                double altura=scanner.nextDouble();<br>
+                Figura rectangulo=new Figura(base,altura);<br>
+                System.out.println(rectangulo.calcularAreaRectangulo());<br>
+            }<br>
+
+            if (option==2){<br>
+                System.out.println("Ingresa la base del triangulo al que le vas a calcular el área: ");<br>
+                double base=scanner.nextDouble();<br>
+                System.out.println("Ingresa la altura del triangulo al que le vas a calcular el área: ");<br>
+                double altura=scanner.nextDouble();<br>
+                Figura triangulo=new Figura(base,altura);<br>
+                System.out.println(triangulo.calcularAreaTriangulo());<br>
+            }<br>
+
+            if (option==3){<br>
+                System.out.println("Ingresa la base 1 del trapecio al que le vas a calcular el área: ");<br>
+                double base=scanner.nextDouble();<br>
+                System.out.println("Ingresa la base 2 del trapecio al que le vas a calcular el área: ");<br>
+                double base2=scanner.nextDouble();<br>
+                System.out.println("Ingresa la altura del trapecio al que le vas a calcular el área: ");<br>
+                double altura=scanner.nextDouble();<br>
+                Figura trapecio=new Figura(base,altura,base2);<br>
+                System.out.println(trapecio.getAltura());<br>
+                System.out.println(trapecio.getBaseA());<br>
+                System.out.println(trapecio.getBaseB());<br>
+                System.out.println(trapecio.calcularAreaTrapecio());<br>
+            }<br>
+
+            if (option==0){<br>
+                System.out.println("Muchas gracias por usar esta herramienta, esperamos que haya sido de ayuda");<br>
+            }<br>
+
+
+        }while (option!=0);<br>
+
+    }<br>
+}<br>
+<br>
+<br>
+public class Figura {<br>
+    private double baseA;<br>
+    private double altura;<br>
+    private double baseB;<br>
+    public Figura(double baseA, double altura, double baseB) {<br>
+        this.baseA = baseA;<br>
+        this.altura = altura;<br>
+        this.baseB = baseB;<br>
+    }<br>
+
+    public double getBaseA() {<br>
+        return baseA;<br>
+    }<br>
+
+    public double getAltura() {<br>
+        return altura;<br>
+    }<br>
+
+    public double getBaseB() {<br>
+        return baseB;<br>
+    }<br>
+
+    public Figura(double baseA, double altura) {<br>
+        this.baseA = baseA;<br>
+        this.altura = altura;<br>
+    }<br>
+
+    public String calcularAreaTriangulo(){<br>
+        double areaTriangulo=(baseA*altura)/2;<br>
+        return "El área del triangulo ingresado es de: "+areaTriangulo+" metros";<br>
+    }<br>
+
+    public String calcularAreaRectangulo(){<br>
+        double areaRectangulo=(baseA*altura);<br>
+        return "El área del rectangulo ingresado es de: "+areaRectangulo+" metros";<br>
+    }<br>
+
+    public String calcularAreaTrapecio(){<br>
+        double areaTrapecio=(baseA+baseB)*altura/2;<br>
+        return "El área del trapecio ingresado es de: "+areaTrapecio+" metros";<br>
+    }<br>
+
+}<br>
+<br>
+<br>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTen">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTen"
+            aria-expanded="false"
+            aria-controls="flush-collapseTen"
+          >
+            Ejercicio 10
+          </button>
+        </h2>
+        <div
+          id="flush-collapseTen"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingTen"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              10-El banco "Su banco fiel" es un banco que inicia sus actividades
+              financieras y necesita una aplicación para llevar las cuentas de
+              sus usuarios; por lo tanto, se sugiere que la cuenta tenga los
+              atributos titular y cantidad. Para cada cliente las cuentas
+              permitirán realizar ingresos, retiros o consultas de valor. En los
+              ingresos no se pueden insertar valores negativos y para los
+              retiros el valor no puede ser mayor al valor que tiene en la
+              cuenta.
+            </h6>
+            import java.util.Scanner;<br>
+
+public class Main {<br>
+    public static void main(String[] args) {<br>
+        Banco banco = new Banco();<br>
+        Scanner scanner = new Scanner(System.in);<br>
+
+        while (true) {<br>
+            System.out.println("1. Crear cuenta");<br>
+            System.out.println("2. Depositar dinero");<br>
+            System.out.println("3. Retirar dinero");<br>
+            System.out.println("4. Consultar saldo");<br>
+            System.out.println("5. Salir");<br>
+
+            int opcion = scanner.nextInt();<br>
+
+            if (opcion == 1) {<br>
+                System.out.print("Ingrese el número de cuenta: ");<br>
+                int numeroCuenta = scanner.nextInt();<br>
+                scanner.nextLine(); // Consumir el carácter de fin de línea <br>
+                System.out.print("Ingrese el titular de cuenta: ");<br>
+                String titularCuenta = scanner.nextLine();<br>
+                System.out.print("Ingrese el saldo de la cuenta: ");<br>
+                double saldo = scanner.nextDouble();<br> 
+                <p>if (saldo < 1 ){ </p>
+                    System.out.println("El saldo para abrir la cuenta debe de ser mayor al ingresado");<br> 
+
+                }else {<br> 
+                    Cuenta cuenta = new Cuenta(numeroCuenta, titularCuenta, saldo);<br> 
+                    banco.agregarCuenta(cuenta);<br> 
+                }<br> 
+            } else if (opcion == 2) {<br> 
+                System.out.print("Ingrese el número de cuenta: ");<br> 
+                int numeroCuenta = scanner.nextInt();<br> 
+                Cuenta cuenta = banco.buscarCuenta(numeroCuenta);<br> 
+                if (cuenta != null) {<br> 
+                    System.out.print("Ingrese el monto a depositar: ");<br> 
+                    double monto = scanner.nextDouble();<br> 
+                    if (monto< 1){<br> 
+                        System.out.println("El saldo a depositar debe ser mayor al ingresado");<br> 
+                    }<br> 
+                    cuenta.depositar(monto);<br> 
+                } else {<br> 
+                    System.out.println("La cuenta no existe");<br> 
+                }<br> 
+            } else if (opcion == 3) {<br> 
+                System.out.print("Ingrese el número de cuenta: ");<br> 
+                int numeroCuenta = scanner.nextInt();<br> 
+                Cuenta cuenta = banco.buscarCuenta(numeroCuenta);<br> 
+                if (cuenta != null) {<br> 
+                    System.out.print("Ingrese el monto a retirar: ");<br> 
+                    double monto = scanner.nextDouble();<br> 
+                    if (monto > cuenta.getSaldo()) {<br> 
+                        System.out.println("El valor a retirar es superior al capital que se posee en la cuenta ");<br> 
+                    }else {<br> 
+                        cuenta.retirar(monto);<br> 
+                    }<br> 
+                } else {<br> 
+                    System.out.println("La cuenta no existe");<br> 
+                }<br> 
+            } else if (opcion == 4) {<br> 
+                System.out.print("Ingrese el número de cuenta: ");<br> 
+                int numeroCuenta = scanner.nextInt();<br> 
+                Cuenta cuenta = banco.buscarCuenta(numeroCuenta);<br> 
+                if (cuenta != null) {<br> 
+                    System.out.println("El saldo de la cuenta es: " + cuenta.getSaldo());<br> 
+                } else {<br> 
+                    System.out.println("La cuenta no existe");<br> 
+                }<br> 
+            } else if (opcion == 5) {<br> 
+                break;<br> 
+            } else {<br> 
+                System.out.println("Opción inválida");<br> 
+            }<br> 
+        }<br> 
+    }<br> 
+}<br> 
+<br> 
+<br> 
+import java.util.ArrayList;<br> 
+
+public class Banco {<br> 
+    private ArrayList<Cuenta> cuentas;<br> 
+
+    public Banco() {<br> 
+        cuentas = new ArrayList<Cuenta>();<br> 
+    }<br> 
+
+    public void agregarCuenta(Cuenta cuenta) {<br> 
+        cuentas.add(cuenta);<br> 
+    }<br> 
+
+    public Cuenta buscarCuenta(int numeroCuenta) {<br> 
+        for (Cuenta cuenta : cuentas) {<br> 
+            if (cuenta.getNumeroCuenta() == numeroCuenta) {<br> 
+                return cuenta;<br> 
+            }<br> 
+        }<br> 
+        return null;<br> 
+    }<br> 
+}<br> 
+<br> 
+<br> 
+public class Cuenta {<br>
+    private int numeroCuenta;<br>
+    private String titularCuenta;<br>
+    private double saldo;<br>
+
+
+    public Cuenta(int numeroCuenta, String titularCuenta, double saldo) {<br>
+        this.numeroCuenta = numeroCuenta;<br>
+        this.titularCuenta = titularCuenta;<br>
+        this.saldo = saldo;<br>
+    }<br>
+
+    public int getNumeroCuenta() {<br>
+        return numeroCuenta;<br>
+    }<br>
+
+    public String getTitularCuenta() {<br>
+        return titularCuenta;<br>
+    }<br>
+
+    public double getSaldo() {<br>
+        return saldo;<br>
+    }<br>
+
+    public void depositar(double monto) {<br>
+        saldo += monto;<br>
+    }<br>
+
+    public void retirar(double monto) {<br>
+        saldo -= monto;<br>
+    }<br>
+}<br>
+<br>
+<br>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>Realizado por: Daniel Felipe Betancur Córdoba</p>
+      <p>Derechos recervados</p>
+      <div class="enlacesFooter">
+        <a href="https://mail.google.com/mail/u/0/?pli=1#inbox?compose=new">
+          <img src="img\mail.png" alt="correo electronico" />
+        </a>
+        <a href="https://www.linkedin.com/in/daniel-felipe-betancur-cordoba/">
+          <img src="img\linkedin.png" alt="linkedin" />
+        </a>
+        <a href="https://github.com/Betancur1991">
+          <img src="img\github.png" alt="github" />
+        </a>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

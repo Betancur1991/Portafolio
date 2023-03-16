@@ -1,0 +1,40 @@
+/* Estilos para Carrusel */
+
+#carouselExampleAutoplaying{
+  background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+margin: 0px 20px 0px 20px;
+border: 1px solid white;
+border-radius: 10px;
+}
+
+.carousel-item img {
+  width: 60% !important;
+  height: auto !important;
+  display: block;
+  margin: 0 auto;
+}
+
+  /* Estilos para el footer */
+
+
+footer {
+  position: fixed;
+  left: -20px;
+  bottom: 0;
+  width: 100%;
+}
+
+
+@media (max-width: 768px) {
+
+  .carousel-item img {
+    width: 60% !important;
+    height: auto !important;
+    display: block;
+    margin: 0 auto;
+  }
+
+  
+}

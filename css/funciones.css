@@ -1,0 +1,13 @@
+article{
+    margin: 30px;
+    color: black;
+    background-color: rgb(104, 133, 133);
+    border: solid 1px black;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article ol li a {
+    color: black;
+}

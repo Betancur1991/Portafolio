@@ -1,0 +1,97 @@
+
+
+ul img {
+  width: 30px;
+}
+
+/* contenedor foto de perfil y speach*/
+.article1 {
+  display: flex;
+  justify-content: center;
+}
+
+article section {
+  border: none;
+  margin-right: 20px;
+  margin-left: 20px;
+  font-size: larger;
+}
+
+/* Estilos foto de perfil */
+.perfilPhoto {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: none;
+  margin: 0px 20px 0px 20px;
+  
+}
+
+/* Estilos Skills */
+
+h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+}
+
+.skillsIMG{
+    display: block;
+  margin: auto;
+  width: 500px;
+  border: solid 1px;
+  border-radius: 10px;
+}
+.skills{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+
+
+
+
+footer a {
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .article1 {
+    display: inline-block;
+    justify-content: center;
+  }
+
+  .skillsIMG{
+    display: block;
+  margin: auto;
+  width: 300px;
+  border: solid 1px;
+  border-radius: 10px;
+}
+
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  nav {
+    height: auto;
+  }
+
+  ul {
+    flex-direction: column;
+    height: auto;
+  }
+
+  li {
+    margin: 10px 0;
+  }
+}

@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css\base.css" />
+    <link rel="stylesheet" href="css\javaTaller.css" />
+
+    <title>Portafolio Daniel Felipe Betancur</title>
+  </head>
+  <body style="background-image: url('img/pseint.jfif'); background-size: cover;">
+    <nav id="navegador">
+      <ul>
+        <li>
+          <a href="index.html"><img src="img\home.png" alt="home" />Home</a>
+        </li>
+        <li><a href="ejerciciosPSeInt.html">Ejercicios PSeInt</a></li>
+        <li>
+          <a
+            href="hoja_de_vida\HOJA_DE_VIDA_DF.pdf"
+            download="HOJA_DE_VIDA_DF.pdf"
+            >Descargar Hoja de Vida.PDF</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne"
+            aria-expanded="false"
+            aria-controls="flush-collapseOne"
+          >
+            Ejercicio 1
+          </button>
+        </h2>
+        <div
+          id="flush-collapseOne"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingOne"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              1-Realizar un programa en el cual se solicite la edad de una
+              persona. Si la persona es mayor o igual a 18 años, deberá mostrar
+              en pantalla: Usted es mayor de edad.
+            </h6>
+            <br />
+            <p>
+                Proceso condicionales <br>
+	
+	definir edad Como entero;<br>
+	Escribir "Cuantos años tienes?";<br>
+	Leer edad;<br>
+	Limpiar Pantalla;<br>
+	
+	si edad>=18 Entonces<br>
+		Escribir "Usted es mayor de edad";<br>
+	FinSi<br>
+
+
+	
+FinProceso<br>
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo"
+            aria-expanded="false"
+            aria-controls="flush-collapseTwo"
+          >
+            Ejercicio 2
+          </button>
+        </h2>
+        <div
+          id="flush-collapseTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingTwo"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              2-Realizar un programa en el cual se solicite la edad de una
+              persona. Si la persona es menor a 18 años, deberá mostrar en
+              pantalla: Usted aún es un niño(a).
+            </h6>
+            <p>
+                Proceso condicionales <br>
+	
+	definir edad Como entero;<br>
+	Escribir "Cuantos años tienes?";<br>
+	Leer edad;<br>
+	Limpiar Pantalla;<br>
+	
+	si edad< 18 Entonces<br>
+		Escribir "Usted aún es un niño(a)";<br>
+	FinSi<br>
+
+
+	
+FinProceso<br>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree"
+            aria-expanded="false"
+            aria-controls="flush-collapseThree"
+          >
+            Ejercicio 3
+          </button>
+        </h2>
+        <div
+          id="flush-collapseThree"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingThree"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              3-Realizar un programa en el cual se solicite el nombre, apellidos
+              y edad de la persona. Si la persona es mayor o igual a 18 años,
+              entonce se deberá imprimir en pantalla [Nombre completo] usted es
+              mayor de edad, por lo tanto puede entrar a la fiesta. Si la edad
+              de la persona es menor que 18 años, entonces, deberá imprimirse el
+              siguiente mensaje: [Nombre completo] usted es menor de edad, por
+              lo tanto, no puede entrar a la fiesta, por favor devuélvase a su
+              casa.
+            </h6>
+            <p>
+                Proceso Variables_e_Impresion <br>
+	
+	Definir nombre Como Caracter;<br>
+	Definir  apellidos Como Caracter;<br>
+	Definir edad Como Entero;<br>
+	Definir altura Como Real;<br>
+	
+	Escribir "Hola, cuál es tu nombre?" ;<br>
+	Leer nombre;<br>
+	Escribir "Cuáles son tus apellidos?" ;<br>
+	Leer apellidos;<br>
+	Escribir "Cuantos años tienes?" ;<br>
+	Leer edad;<br>
+	
+	
+	Limpiar Pantalla;<br>
+	
+	
+	si edad>=18 Entonces <br>
+		Escribir nombre," ", apellidos,"  usted es mayor de edad, por lo tanto puede entrar a la fiesta.";<br>
+	SiNo<br>
+		Escribir nombre," ", apellidos,"  usted es menor de edad, por lo tanto, no puede entrar a la fiesta, por favor devuélvase a su casa.";<br>
+	FinSi<br>
+
+	
+	
+FinProceso<br>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFour">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFour"
+            aria-expanded="false"
+            aria-controls="flush-collapseFour"
+          >
+            Ejercicio 4
+          </button>
+        </h2>
+        <div
+          id="flush-collapseFour"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingFour"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              4-La video tienda que presta sus servicios de alquiler de
+              películas a los usuarios del barrio el Porvenir, requiere de una
+              aplicación que permita registrar el alquiler de las películas que
+              adquieren sus usuarios. Para cada usuario se debe permitir la
+              opción de alquilar película, consultar películas disponibles y
+              recibir película en la video tienda con la opción de realizar
+              anotaciones sobre estas si se llegan a presentar daños u otra
+              novedad sobre la película.
+            </h6>
+            <p>
+                Proceso Condicionales<br>
+	
+	Definir NombreCompleto Como Caracter;<br>
+	definir Numeralseleccionad Como Entero;<br>
+	definir TituloPelicula Como Caracter;<br>
+	definir Comentario Como Caracter;<br>
+	Definir opcion Como Entero;<br>
+	
+	Escribir " Bienvenido a la Video Tienda El Porvenir";<br>
+	
+	escribir "Hola, ¿Cual es tu nombre y apellidos? ";<br>
+	leer NombreCompleto;<br>
+	Limpiar Pantalla;<br>
+	Escribir "Bienvenido ", NombreCompleto;<br>
+	
+	
+	Escribir " Elije el numero que corresponda a la opcion que deseas ";<br>
+	Escribir "1. Alquiler de peliculas ";<br>
+	Escribir "2. Ver peliculas disponibles ";<br>
+	Escribir "3. Devolución de peliculas y comentarios sobre las peliculas ";<br>
+	leer Numeralseleccionad;<br>
+	Limpiar Pantalla;<br>
+	
+	segun Numeralseleccionad Hacer<br>
+		1:<br>
+			Escribir " Por favor ingresa el titulo de la pelicula que deseas";<br>
+			leer TituloPelicula;<br>
+			Escribir "Se ha registrado la pelicula ", TituloPelicula," a tu nombre";<br>
+			
+		2:<br>
+			Escribir "las peliculas disponibles en el momento son:";<br>
+			Escribir " El origen";<br>
+			Escribir "Batman";<br>
+			Escribir "La dama y el Vagabundo";<br>
+			Escribir "La guerra de los botones";<br>
+			Escribir "Gran hotel Budapest ";<br>
+			Escribir " deseas alquilar alguna de las peliculas mencionadas ";<br>
+			Escribir " Digita el numero 1 para si o el numero 2 para no";<br>
+			leer opcion;<br>
+			segun opcion hacer<br>
+				1:<br>
+					Escribir "Escribe el titulo de la pelicula deseada";<br>
+					Leer TituloPelicula;<br>
+					Escribir "gracias por usar nuestro servicio ";<br>
+					
+				2:<br>
+					escribir "gracias por usar nuestro servicio ";<br>
+					
+			FinSegun<br>
+			
+			
+		3:<br>
+			Escribir "Cual es el titulo de la pelicula que vas a devolver";<br>
+			leer TituloPelicula;<br>
+			escribir " Marca el numero 1, si tienes algun comentario sobre ", TituloPelicula, " que alquilaste en nuestra video tienda, de lo contrario marca 2";<br>
+			leer opcion;<br>
+			segun opcion hacer<br>
+				1:<br>
+					Escribir "por favor, escribe tu comentario";<br>
+					Leer comentario;<br>
+					escribir "tendremos en cuenta tu comentario, gracias por utilizar nuestro servicio";<br>
+				2:<br>
+					escribir "Gracias por utilizar nuestro servicio";<br>
+			FinSegun<br>
+			
+			
+	FinSegun<br>
+	
+	
+	
+	
+	
+FinProceso <br>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFive">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFive"
+            aria-expanded="false"
+            aria-controls="flush-collapseFive"
+          >
+            Ejercicio 5
+          </button>
+        </h2>
+        <div
+          id="flush-collapseFive"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingFive"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              5-La Droguería Mi Salud presta sus servicios en la localidad de
+              Suba y requiere una aplicación para poder facturar los productos
+              que vende a sus clientes y para ello, los productos tienen unas
+              características que deben indicársele al cliente para que pueda
+              escoger el producto a comprar. Para cada cliente, se tienen las
+              opciones de compra de producto, consulta de precios por producto y
+              devoluciones en caso de que se presenten.
+            </h6>
+            <p>
+                Proceso Drogueria <br>
+	
+	Definir NombreCompleto,direccion,ProductoParaDevolver Como Caracter;<br>
+	definir Compra,compra1,compra2,compra3,compra4,compra5,opcion,unidades,precio,seguircomprando Como Entero;<br>
+	
+	escribir "hola, ¿Cual es tu nombre y apellidos? "; <br>
+	leer NombreCompleto;<br>
+	Escribir " Bienvenido ", NombreCompleto;<br>
+	
+	escribir Nombrecompleto, " ¿Cual es tu direccion? "; <br>
+	leer direccion;<br>
+	
+	Escribir "por favor selecciona el numeral de opcione deseada";<br>
+	Escribir " 1. Ver listado de productos y precios";<br>
+	escribir " 2. Para realizar devolucion de productos";<br>
+	Escribir " 3. Realizar compra de productos";<br>
+	
+	Leer opcion;<br>
+	Limpiar Pantalla;<br>
+	
+	segun opcion Hacer<br>
+		1:<br>
+			Escribir " 1. Acetaminofen $3500";<br>
+			Escribir " 2. dolex gripa $5200";<br>
+			Escribir " 3. crema para arrugas $15000";<br>
+			Escribir " 4. mentas $200";<br>
+			Escribir " 5. chocolatinas $1500";<br>
+			
+		2:<br>
+			Escribir " Por favor comentenos el producto a devolver y la razon por la que lo quiere devolver ";<br>
+			leer ProductoParaDevolver;<br>
+			Escribir " Tendremos en cuenta tu comentario para la devolucion y en el transcurso del dia te daremos una respuesta";<br>
+		3:<br>
+			
+			Escribir " seleccione el numero del producto a comprar";<br>
+			Escribir " 1. Acetaminofen $3500";<br>
+			Escribir " 2. dolex gripa $5200";<br>
+			Escribir " 3. crema para arrugas $15000";<br>
+			Escribir " 4. mentas $200";<br>
+			Escribir " 5. chocolatinas $1500";<br>
+			leer compra;<br>
+			si compra=1 Entonces<br>
+				compra<-3500;<br>
+				
+			FinSi<br>
+			si compra=2 Entonces<br>
+				compra<-5200;<br>
+				
+			FinSi<br>
+			si compra=3 Entonces<br>
+				compra<-15000;<br>
+				
+			FinSi<br>
+			si compra=4 Entonces<br>
+				compra<-200;<br>
+				
+			FinSi<br>
+			si compra=5 Entonces<br>
+				compra<-1500;<br>
+				
+			FinSi<br>
+			
+			
+			Escribir "cantidad de unidades a comprar";<br>
+			Leer unidades;<br>
+			
+			compra1<-compra*unidades;<br>
+			
+			Escribir "desea seguir comprando?";<br>
+			Escribir "Si es asi, marque el numero 1, de lo contrario marque el numero 2";<br>
+			
+			leer seguircomprando;<br>
+			
+			Segun seguircomprando Hacer<br>
+				1:<br>
+					Escribir " seleccione el numero del producto a comprar";<br>
+					Escribir " 1. Acetaminofen $3500";<br>
+					Escribir " 2. dolex gripa $5200";<br>
+					Escribir " 3. crema para arrugas $15000";<br>
+					Escribir " 4. mentas $200";<br>
+					Escribir " 5. chocolatinas $1500";<br>
+					leer compra;<br>
+					si compra=1 Entonces<br>
+						compra<-3500;<br>
+						
+					FinSi<br>
+					si compra=2 Entonces<br>
+						compra<-5200;<br>
+						
+					FinSi<br>
+					si compra=3 Entonces<br>
+						compra<-15000;<br>
+						
+					FinSi<br>
+					si compra=4 Entonces<br>
+						compra<-200;<br>
+						
+					FinSi<br>
+					si compra=5 Entonces<br>
+						compra<-1500;<br>
+						
+					FinSi<br>
+					Escribir "cantidad de unidades a comprar";<br>
+					Leer unidades;<br>
+					
+					compra2<-compra*unidades;<br>
+					Escribir "Gracias por su compra, el valor total a pagar es ", (compra1+compra2);<br>
+					
+					escribir "deseas seguir comprando?";<br>
+					Escribir "Si es asi, marque el numero 1, de lo contrario marque el numero 2";<br>
+					leer seguircomprando;<br>
+					
+					segun seguircomprando Hacer<br>
+						1:<br>
+							Escribir " seleccione el numero del producto a comprar";<br>
+							Escribir " 1. Acetaminofen $3500";<br>
+							Escribir " 2. dolex gripa $5200";<br>
+							Escribir " 3. crema para arrugas $15000";<br>
+							Escribir " 4. mentas $200";<br>
+							Escribir " 5. chocolatinas $1500";<br>
+							leer compra;<br>
+							si compra=1 Entonces<br>
+								compra<-3500;<br>
+								
+							FinSi<br>
+							si compra=2 Entonces<br>
+								compra<-5200;<br>
+								
+							FinSi<br>
+							si compra=3 Entonces<br>
+								compra<-15000;<br>
+								
+							FinSi<br>
+							si compra=4 Entonces<br>
+								compra<-200;<br>
+								
+							FinSi<br>
+							si compra=5 Entonces<br>
+								compra<-1500;<br>
+								
+							FinSi<br>
+							
+							
+							Escribir "cantidad de unidades a comprar";<br>
+							Leer unidades;<br>
+							
+							compra3<-compra*unidades;<br>
+							Escribir "Gracias por su compra, el valor total a pagar es ", (compra1+compra2+compra3);<br>
+							
+							escribir "deseas seguir comprando?";<br>
+							Escribir "Si es asi, marque el numero 1, de lo contrario marque el numero 2";<br>
+							leer seguircomprando;<br>
+							Segun seguircomprando hacer<br>
+								
+								1:<br>
+									Escribir " seleccione el numero del producto a comprar";<br>
+									Escribir " 1. Acetaminofen $3500";<br>
+									Escribir " 2. dolex gripa $5200";<br>
+									Escribir " 3. crema para arrugas $15000";<br>
+									Escribir " 4. mentas $200";<br>
+									Escribir " 5. chocolatinas $1500";<br>
+									leer compra;<br>
+									si compra=1 Entonces<br>
+										compra<-3500;<br>
+										
+									FinSi<br>
+									si compra=2 Entonces<br>
+										compra<-5200;<br>
+										
+									FinSi<br>
+									si compra=3 Entonces<br>
+										compra<-15000;<br>
+										
+									FinSi<br>
+									si compra=4 Entonces<br>
+										compra<-200;<br>
+										
+									FinSi<br>
+									si compra=5 Entonces<br>
+										compra<-1500;<br>
+										
+									FinSi<br>
+									Escribir "cantidad de unidades a comprar";<br>
+									Leer unidades;<br>
+									
+									compra4<-compra*unidades;<br>
+									Escribir "Gracias por su compra, el valor total a pagar es ", (compra1+compra2+compra3+compra4);<br>
+									<br>
+									escribir "deseas seguir comprando?";<br>
+									Escribir "Si es asi, marque el numero 1, de lo contrario marque el numero 2";<br>
+									leer seguircomprando;<br>
+									Segun seguircomprando Hacer<br>
+										1:<br>
+											Escribir " seleccione el numero del producto a comprar";<br>
+											Escribir " 1. Acetaminofen $3500";<br>
+											Escribir " 2. dolex gripa $5200";<br>
+											Escribir " 3. crema para arrugas $15000";<br>
+											Escribir " 4. mentas $200";<br>
+											Escribir " 5. chocolatinas $1500";<br>
+											leer compra;<br>
+											si compra=1 Entonces<br>
+												compra<-3500;<br>
+												
+											FinSi<br>
+											si compra=2 Entonces<br>
+												compra<-5200;<br>
+												
+											FinSi<br>
+											si compra=3 Entonces<br>
+												compra<-15000;<br>
+												
+											FinSi<br>
+											si compra=4 Entonces<br>
+												compra<-200;<br>
+												
+											FinSi<br>
+											si compra=5 Entonces<br>
+												compra<-1500;<br>
+												
+											FinSi<br>
+											Escribir "cantidad de unidades a comprar";<br>
+											Leer unidades;<br>
+											
+											compra5<-compra*unidades;<br>
+											Escribir "Gracias por su compra, el valor total a pagar es ", (compra1+compra2+compra3+compra4+compra5);<br>
+										
+									FinSegun<br>
+							FinSegun<br>
+					FinSegun<br>
+				2:<br>
+					Escribir "Gracias por su compra, el valor total a pagar es ", compra1;<br>
+					
+			FinSegun<br>
+	FinSegun<br>
+	
+FinProceso<br>
+
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingSix">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseSix"
+            aria-expanded="false"
+            aria-controls="flush-collapseSix"
+          >
+            Ejercicio 6
+          </button>
+        </h2>
+        <div
+          id="flush-collapseSix"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingSix"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              6-El taller de motos "El Maquinista" recibe motocicletas de alto
+              cilindraje para realizar las respectivas revisiones y requiere una
+              aplicación que le permita registrar los servicios generados a sus
+              clientes. Para cada motocicleta se debe tener registro del ingreso
+              al taller y las observaciones por parte del cliente. También debe
+              existir registro de salida del taller con las novedades y otra de
+              arreglos hechos por el mecánico en caso de que se requiera
+              inventariar cambios repuestos en la motocicleta al entregarla.
+            </h6>
+            <p>
+                Proceso Tienda_Maquinista <br>
+	
+	definir fecha Como Caracter;<br>
+	escribir "fecha de ingreso del vehiculo ";<br>
+	leer fecha;<br>
+	definir placa Como Caracter;<br>
+	escribir "cual es la placa del vehiculo";<br>
+	leer placa;<br>
+	definir propietario Como Caracter;<br>
+	Escribir "cual es el nombre del propietario del vehiculo";<br>
+	leer propietario;<br>
+	definir motivo Como Caracter;<br>
+	Escribir "cual es el motivo por el que va a dejar su vehiculo";<br>
+	leer motivo;<br>
+	Definir opcion Como Entero;<br>
+	
+	Escribir "Seleccione el numeral de la opcion deseada";<br>
+	Escribir " 1. Datos del vehiculo y razones del cliente por las que se ingresa";<br>
+	escribir " 2. Reparaciones realizadas ";<br>
+	Escribir " 3. Salidas y Repuestos Utilizados ";<br>
+	
+	leer opcion;<br>
+	
+	segun opcion hacer<br>
+		1:<br>
+			escribir "EL nombre completo del propietario es ", propietario," la placa del vehiculo es ", placa, " y la fecha de ingreso del vehiculo fue el ", fecha;<br>
+			Escribir "el vehiculo se ingresa por las siguientes razones";<br>
+			Escribir motivo, " Segun lo descrito por el cliente ";<br>
+			
+		2:
+			Escribir " Ingresar las reparaciones efectuadas ";<br>
+			definir reparacion Como Caracter;<br>
+			leer reparacion;<br>
+		3:
+			Escribir "ingresa la fecha de salida del vehiculo";<br>
+			leer fecha;<br>
+			Escribir " la fecha de salida del vehiculo fue el dia ", fecha;<br>
+			definir repuestos Como Caracter;<br>
+			Escribir "los repuestos utilizados fueron:";<br>
+			leer repuestos;<br>
+			definir inventario Como Logico;<br>
+			Escribir " desea realizar el inventario de los repuestos usados (responda verdadero o falso)";<br>
+			leer inventario;<br>
+			si inventario=verdadero Entonces<br>
+				escribir "Los repuestos utilizados, para ingresar al inventario son " , repuestos;<br>
+			FinSi<br>
+
+
+	FinSegun<br>
+	
+FinProceso<br>
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingSeven">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseSeven"
+            aria-expanded="false"
+            aria-controls="flush-collapseSeven"
+          >
+            Ejercicio 7
+          </button>
+        </h2>
+        <div
+          id="flush-collapseSeven"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingSeven"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              7-La Secretaría de Salud Municipal requiere de una aplicación que
+              le permita calcular el IMC (Índice de masa corporal) y requiere
+              los datos peso en kilogramos y estatura en metros Para cada
+              persona encuestada adicional a los datos suministrados, debe
+              mostrar el resultado para cada uno y establecer en qué rango se
+              encuentra (bajo peso, normal, sobrepeso y obeso).
+            </h6>
+            <p>
+                Proceso IMC <br>
+	
+	//Imc= peso/estatura al cuadrado<br>
+	
+	Definir NombreCompleto Como Caracter;<br>
+	escribir "hola, ¿Cual es tu nombre y apellidos? "; <br>
+	leer NombreCompleto;<br>
+	Limpiar Pantalla;<br>
+	Escribir "Bienvenido ", NombreCompleto;<br>
+	
+	definir estatura Como Real;<br>
+	escribir "cual es tu estatura en metros?";<br>
+	leer estatura;<br>
+	
+	definir peso Como entero;<br>
+	escribir "cual es tu peso en kilogramos?";<br>
+	leer peso;<br>
+	
+	si peso/estatura ^2<=18.4 Entonces<br>
+		escribir "bajo peso";<br>
+	FinSi<br>
+	
+	si peso/estatura^2>18.4 y peso/estatura^2<=24.9 Entonces<br>
+		escribir "peso normal";<br>
+	FinSi<br>
+	
+	si peso/estatura^2>25 y peso/estatura^2<=29.9 Entonces<br>
+		escribir "sobrepeso";<br>
+	FinSi<br>
+	
+	si peso/estatura^2>30 y peso/estatura^2<=34.9 Entonces<br>
+		escribir "obesidad grado 1";<br>
+	FinSi<br>
+	
+	si peso/estatura^2>35 y peso/estatura^2<=39.9 Entonces<br>
+		escribir "obesidad grado 2";<br>
+	FinSi<br>
+	
+	si peso/estatura^2>=40  Entonces<br>
+		escribir "obesidad grado 3";<br>
+	FinSi<br>
+FinProceso<br>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingEight">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseEight"
+            aria-expanded="false"
+            aria-controls="flush-collapseEight"
+          >
+            Ejercicio 8
+          </button>
+        </h2>
+        <div
+          id="flush-collapseEight"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingEight"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              8-El pastelero Don Carlos es el mejor pastelero de la ciudad y
+              requiere una aplicación que le permita registrar los pedidos de
+              los clientes en cuanto a las tortas que realiza. Cada torta tiene
+              unas características propias como sabor, cantidad (porciones) y
+              decoraciones). Se requiere que la aplicación permita registrar los
+              pedidos, las tortas disponibles y las ventas que se registren
+              diariamente.
+            </h6>
+            <p>
+                Proceso Pasteleria<br>
+	
+	definir cliente Como Caracter;<br>
+	definir sabor Como Caracter;<br>
+	definir decoracion Como Caracter;<br>
+	Escribir "cual es tu nombre completo";<br>
+	leer cliente;<br>
+	Definir opcion Como Entero;<br>
+	Definir opcion_a Como Entero;<br>
+	Definir opcion_b Como Entero;<br>
+	Definir porciones Como Entero;<br>
+	Definir costo_u Como Entero;<br>
+	Definir costo_u_s Como Entero;<br>
+	Definir tortas_mora Como Entero;<br>
+	Definir tortas_arequipe Como Entero;<br>
+	Definir tortas_chocolate Como Entero;<br>
+	
+	
+	Escribir "Seleccione el numeral de la opcion deseada";<br>
+	Escribir " 1. Realizar un Pedido";<br>
+	escribir " 2. Tortas disponibles ";<br>
+	Escribir " 3. Ventas registradas";<br>
+	
+	
+	leer opcion;<br>
+	
+	segun opcion hacer<br>
+		1:
+			Escribir "Arma tu torta:";<br>
+			Escribir " 1. Porciones";<br>
+			escribir " 2. Sabores";<br>
+			Escribir " 3. Tipo de decoracion";<br>
+			Escribir " 4. Salir";<br>
+			leer opcion_a;<br>
+			Limpiar Pantalla;<br>
+			Escribir "Seleccione el numeral que corresponde a las porciones deseadas:";<br>
+			Escribir " 1. 8 porciones";<br>
+			escribir " 2. 12 porciones";<br>
+			Escribir " 3. 16 porciones";<br>
+			Escribir " 4. 32 porciones";<br>
+			leer porciones;<br>
+			
+			Segun  porciones Hacer<br>
+				1:<br>
+					porciones<-8;<br>
+					costo_u<-10000;<br>
+					
+				2:<br>
+					porciones<-12;<br>
+					costo_u<-15000;<br>
+					
+				3:<br>
+					porciones<-16;<br>
+					costo_u<-18000;<br>
+					
+				4:<br>
+					porciones<-32;<br>
+					costo_u<-32000;	<br>
+					
+					
+			FinSegun<br>
+			
+			Limpiar Pantalla;<br>
+			
+			Escribir "Seleccione el numeral que corresponde a sabor que deseadas:";<br>
+			Escribir " 1. Arequipe";<br>
+			escribir " 2. Mora";<br>
+			Escribir " 3. Chocolate";<br>
+			
+			leer opcion_a;<br>
+			
+			Segun  opcion_a Hacer<br>
+				1:<br>
+					sabor<-"Arequipe";<br>
+					costo_u_s<-5000;<br>
+					
+				2:<br>
+					sabor<-"Mora";<br>
+					costo_u_s<-3000;<br>
+					
+				3:<br>
+					sabor<-"Chocolate";<br>
+					costo_u_s<-4000;<br>
+					
+					
+			FinSegun<br>
+			
+			Limpiar Pantalla;<br>
+			
+			Escribir "Seleccione el numeral de la decoración que deseas:";<br>
+			Escribir " 1. Primera Comunion";<br>
+			escribir " 2. Matrimonio";<br>
+			Escribir " 3. Cumpleaños";<br>
+			
+			leer opcion_b;<br>
+			
+			Segun  opcion_b Hacer<br>
+				1:<br>
+					decoracion<-"Primera Comunion";<br>
+					
+				2:<br>
+					decoracion<-"Matrimonio";<br>
+					
+				3:<br>
+					decoracion<-"Cumpleaños";<br>
+					
+					
+			FinSegun<br>
+			
+			Escribir "Elegiste una torta de ", porciones," porciones, de sabor a ", sabor," y con una decoracion de ",decoracion; <br>
+			Escribir "esta torta tiene un valor de ",costo_u+costo_u_s," pesos"; <br>
+			
+		2:
+			Escribir " Las tortas disponibles en este momento son de los siguientes sabores: ";<br>
+			Escribir " 1. Arequipe";<br>
+			escribir " 2. Mora";<br>
+			Escribir " 3. Chocolate";<br>
+			
+		3:
+			Escribir "las tortas vendidas de mora al dia de hoy son de:", ;<br>
+			leer tortas_mora;<br>
+			Escribir "las tortas vendidas de arequipe al dia de hoy son de:", ;<br>
+			leer tortas_arequipe;<br>
+			Escribir "las tortas vendidas de chocolate al dia de hoy son de:", ;<br>
+			leer tortas_chocolate;<br>
+			
+			Escribir "El total de tortas vendidas al día de hoy son de:",  tortas_arequipe+tortas_chocolate+tortas_mora;<br>
+			
+			
+
+
+	FinSegun<br>
+	
+FinProceso<br>
+
+
+
+            </p>
+<br>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingNine">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseNine"
+            aria-expanded="false"
+            aria-controls="flush-collapseNine"
+          >
+            Ejercicio 9
+          </button>
+        </h2>
+        <div
+          id="flush-collapseNine"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingNine"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              9-El profesor de geometría está explicando a sus estudiantes las
+              fórmulas para calcular el área de diferentes figuras geométricas,
+              para ello requiere una aplicación que le facilite el ejercicio
+              solicitándole los valores al estudiante. La aplicación debe
+              permitir que el estudiante seleccione si desea calcular el área de
+              un rectángulo, triángulo o trapecio. No olvide solicitar los datos
+              necesarios para realizar cada cálculo y mostrar su respectivo
+              resultado.
+            </h6>
+           <p>
+            Proceso Calculadora_Areas <br>
+	
+	escribir "digita el numero de la geometria a la que le desea Calcular el area";<br>
+	Escribir " 1. triangulo";<br>
+	Escribir " 2. rectangulo";<br>
+	Escribir " 3. trapecio";<br>
+	definir geometria Como Entero;<br>
+	leer geometria;<br>
+	
+	segun geometria Hacer<br>
+		1:<br>
+			// area triangulo es igual a base por altura sobre 2<br>
+			definir base Como Real;<br>
+			escribir "ingrese el valor de la base en metros";<br>
+			leer base;<br>
+			
+			definir altura Como Real;<br>
+			escribir "ingrese el valor de la altura en metros";<br>
+			leer altura;<br>
+			
+			Escribir "el area del triangulo es igual a ", base*altura/2 , " metros cuadrados";<br>
+			
+		2:<br>
+			// area rectangulo es igual a base por altura <br>
+			definir base Como Real;<br>
+			escribir "ingrese el valor de la base en metros";<br>
+			leer base;<br>
+			
+			definir altura Como Real;<br>
+			escribir "ingrese el valor de la altura en metros";<br>
+			leer altura;<br>
+			
+			Escribir "el area del rectangulo es igual a ", base*altura , " metros cuadrados";<br>
+			
+		3:<br>
+			// area trapecio es igual a base mayor mas la base menor por altura sobre 2<br>
+			definir basemayor Como Real;<br>
+			escribir "ingrese el valor de la baseMayor en metros";<br>
+			leer basemayor;<br>
+			
+			definir basemenor Como Real;<br>
+			escribir "ingrese el valor de la baseMenor en metros";<br>
+			leer basemenor;<br>
+			
+			definir altura Como Real;<br>
+			escribir "ingrese el valor de la altura en metros";<br>
+			leer altura;<br>
+			
+			Escribir "el area del Trapecio es igual a ", (basemayor+basemenor)*altura/2 , " metros cuadrados";<br>
+			
+			
+	FinSegun<br>
+FinProceso<br>
+
+           </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTen">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTen"
+            aria-expanded="false"
+            aria-controls="flush-collapseTen"
+          >
+            Ejercicio 10
+          </button>
+        </h2>
+        <div
+          id="flush-collapseTen"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingTen"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              10-El banco "Su banco fiel" es un banco que inicia sus actividades
+              financieras y necesita una aplicación para llevar las cuentas de
+              sus usuarios; por lo tanto, se sugiere que la cuenta tenga los
+              atributos titular y cantidad. Para cada cliente las cuentas
+              permitirán realizar ingresos, retiros o consultas de valor. En los
+              ingresos no se pueden insertar valores negativos y para los
+              retiros el valor no puede ser mayor al valor que tiene en la
+              cuenta.
+            </h6>
+          <p> 
+            Proceso Banco<br>
+	Escribir " Bienvenido a Banco Fiel";<br>
+	
+	Definir NombreCompleto Como Caracter;<br>
+	Definir saldo Como real;<br>
+	Definir ingreso Como real;<br>
+	Definir total Como real;<br>
+	Definir retiros Como real;<br>
+	definir opcion Como Entero;<br>
+	escribir "hola, ¿Cual es tu nombre y apellidos? "; <br>
+	leer NombreCompleto;<br>
+	ingreso<-0;<br>
+	
+	Escribir "Tienes una cuenta creada  ";<br>
+	Escribir  "ingresa 1 para: SI";<br>
+	Escribir  "ingresa 2 para: NO";<br>
+	leer opcion;<br>
+	Limpiar Pantalla;<br>
+	
+	Segun opcion hacer<br>
+		1:<br>
+			escribir " Bienvenido ";<br>
+			saldo<-50000;<br>
+			
+			Escribir "Digite el numero de la opcion que desea";<br>
+			Escribir "1. Ingresar dinero a tu cuenta";<br>
+			Escribir "2. Retiros";<br>
+			Escribir "3. consultar Saldo";<br>
+			leer opcion;<br>
+			
+			Segun opcion hacer<br>
+				1:<br>
+					escribir " digita el monto que deseas ingresar ";<br>
+					leer ingreso;<br>
+					total<-ingreso+saldo;<br>
+					Escribir "tu saldo actual es de ", (total), " pesos";<br>
+					
+				2:<br>
+					escribir " digita el monto que deseas retirar ";<br>
+					leer retiros;<br>
+					total<-ingreso+saldo;<br>
+					si retiros>total Entonces<br>
+						Escribir "usted no cuenta con fondos para esta transacción";	<br>			
+					FinSi<br>
+					si retiros <total Entonces<br>
+						Escribir " Su saldo actual con este retiro es de ", (total-retiros), " pesos";<br>
+					FinSi<br>
+					
+				3:<br>
+					total<-ingreso+saldo;<br>
+					Escribir " Su saldo actual es de ", total;<br>
+					
+			FinSegun<br>
+			
+		2:<br>
+			escribir " Para crear una cuenta debes depositar 50000$, deseas crear la cuenta:";<br>
+			Escribir  "ingresa 1 para: SI";<br>
+			Escribir  "ingresa 2 para: NO";<br>
+			leer opcion;<br>
+			Segun opcion hacer<br>
+				1:<br>
+					escribir " Tu cuenta ha sido creada con exito ";<br>
+					saldo <-50000;<br>
+					Escribir "tu saldo actual es de ", saldo, " pesos";<br>
+					
+				2:<br>
+					escribir " Muchas gracias por tenernos en cuenta ";<br>
+					
+			FinSegun<br>
+			
+			
+	FinSegun<br>
+	
+FinProceso<br>
+
+          </p>
+          </div>
+        </div>
+      </div>
+    </div>
+	<div id="video">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/GxuOKl5xmdE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	</div>
+    <footer>
+      <p>Realizado por: Daniel Felipe Betancur Córdoba</p>
+      <p>Derechos recervados</p>
+      <div class="enlacesFooter">
+        <a href="https://mail.google.com/mail/u/0/?pli=1#inbox?compose=new">
+          <img src="img\mail.png" alt="correo electronico" />
+        </a>
+        <a href="https://www.linkedin.com/in/daniel-felipe-betancur-cordoba/">
+          <img src="img\linkedin.png" alt="linkedin" />
+        </a>
+        <a href="https://github.com/Betancur1991">
+          <img src="img\github.png" alt="github" />
+        </a>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

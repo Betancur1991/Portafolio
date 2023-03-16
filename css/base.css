@@ -1,0 +1,112 @@
+body {
+    background: #C9D6FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100%;
+    margin: 0;
+  }
+  
+  nav {
+    background-color: #333;
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    height: 100%;
+  }
+  
+  a {
+    color: rgb(163, 88, 88);
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-weight:lighter;
+    transition: color 0.3s ease;
+    padding: 10px;
+    
+  }
+  
+  a:hover {
+    color: #c7d7e0;
+    background: #000428;  
+    background: -webkit-linear-gradient(to right, #004e92, #000428); 
+    background: linear-gradient(to right, #004e92, #000428); 
+    border: 1px solid rgb(226, 219, 219);
+    border-radius: 10px;
+    margin: 10px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin: 0px 20px 0px 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+/* Estilos para el footer */
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin: 0px 20px 0px 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    display: block;
+  }
+  
+  footer p {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .enlacesFooter {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+
+  footer img {
+    width: 30px;
+  }
+
+  #video{
+    margin: 40 ;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #000428;
+    opacity: 0.8;
+  }
+
+  @media (max-width: 768px) {
+    nav {
+      height: auto;
+    }  
+    
+    ul {
+      flex-direction: column;
+      height: auto;
+    }
+    
+    li {
+      margin: 10px 0;
+    }
+  }

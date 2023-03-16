@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css\base.css" />
+    <link rel="stylesheet" href="css\javaTaller.css" />
+
+    <title>Portafolio Daniel Felipe Betancur</title>
+  </head>
+  <body style="background-image: url('img/pseint.jfif'); background-size: cover;">
+    <nav id="navegador">
+      <ul>
+        <li>
+          <a href="index.html"><img src="img\home.png" alt="home" />Home</a>
+        </li>
+        <li><a href="ejerciciosPSeInt.html">Ejercicios PSeInt</a></li>
+        <li>
+          <a
+            href="hoja_de_vida\HOJA_DE_VIDA_DF.pdf"
+            download="HOJA_DE_VIDA_DF.pdf"
+            >Descargar Hoja de Vida.PDF</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne"
+            aria-expanded="false"
+            aria-controls="flush-collapseOne"
+          >
+            Ejercicio 1
+          </button>
+        </h2>
+        <div
+          id="flush-collapseOne"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingOne"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              1-Realizar un programa en el cual se solicite la edad de una
+              persona. Si la persona es mayor o igual a 18 años, deberá mostrar
+              en pantalla: Usted es mayor de edad.
+            </h6>
+            <br />
+            <p>
+                SubProceso mayoredad ( edad ) <br>
+	Si edad>=18 Entonces <br>
+		Escribir  "usted es mayor de edad"; <br>
+	FinSi <br>
+FinSubProceso <br>
+
+Proceso sin_titulo<br>
+	definir age,a Como Entero;<br>
+	
+	Escribir "Ejercicio 1";<br>
+	Escribir "";<br>
+	escribir "ingrese la edad";<br>
+	leer age;<br>
+	mayoredad(age);<br>
+	escribir "oprima enter para continuar";<br>
+	leer a;<br>
+	Limpiar Pantalla;<br>
+	FinProceso<br>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo"
+            aria-expanded="false"
+            aria-controls="flush-collapseTwo"
+          >
+            Ejercicio 2
+          </button>
+        </h2>
+        <div
+          id="flush-collapseTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingTwo"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              2-Realizar un programa en el cual se solicite la edad de una
+              persona. Si la persona es menor a 18 años, deberá mostrar en
+              pantalla: Usted aún es un niño(a).
+            </h6>
+            <p>
+				SubProceso mayoredad_completa ( edad ) <br>
+				Si edad< 18 Entonces<br>
+					Escribir  "usted aun es un niño(a)";<br>
+				SiNo<br>
+					Escribir  "usted es mayor de edad";<br>
+				FinSi<br>
+			FinSubProceso<br>
+
+			Proceso sin_titulo <br>
+			definir age,a Como Entero;<br>
+			Escribir "Ejercicio 2";<br>
+	Escribir "";<br>
+	escribir "ingrese la edad";<br>
+	leer age;<br>
+	mayoredad_completa(age);<br>
+	escribir "oprima enter para continuar";<br>
+	leer a;<br>
+	Limpiar Pantalla;<br>
+
+
+	
+FinProceso<br>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree"
+            aria-expanded="false"
+            aria-controls="flush-collapseThree"
+          >
+            Ejercicio 3
+          </button>
+        </h2>
+        <div
+          id="flush-collapseThree"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingThree"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              3-Realizar un programa en el cual se solicite el nombre, apellidos
+              y edad de la persona. Si la persona es mayor o igual a 18 años,
+              entonce se deberá imprimir en pantalla [Nombre completo] usted es
+              mayor de edad, por lo tanto puede entrar a la fiesta. Si la edad
+              de la persona es menor que 18 años, entonces, deberá imprimirse el
+              siguiente mensaje: [Nombre completo] usted es menor de edad, por
+              lo tanto, no puede entrar a la fiesta, por favor devuélvase a su
+              casa.
+            </h6>
+            <p>
+				SubProceso presentandome ( nombre,apellido,edad )<br>
+				Si edad< 18 Entonces<br>
+					Escribir  nombre," ",apellido," usted es menor de edad, por lo tanto, no puede entrar a la fiesta, por favor devuélvase a su casa.";<br>
+				SiNo<br>
+					Escribir  nombre," ",apellido," usted es mayor de edad,por lo tanto puede entrar a la fiesta. ";<br>
+				FinSi<br>
+			FinSubProceso<br>
+
+
+                Proceso Variables_e_Impresion <br>
+				definir age,a Como Entero;<br>
+	Definir name,lastname Como Caracter;<br>
+
+	Escribir "Ejercicio 3";<br>
+	Escribir "";<br>
+	escribir "ingrese su nombre";<br>
+	leer name;<br>
+	escribir "ingrese su apellido";<br>
+	leer lastname;<br>
+	escribir "ingrese la edad";<br>
+	leer age;<br>
+	presentandome(name,lastname,age);<br>
+	escribir "oprima enter para continuar";<br>
+	leer a;<br>
+	Limpiar Pantalla;<br>
+	
+FinProceso<br>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFour">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFour"
+            aria-expanded="false"
+            aria-controls="flush-collapseFour"
+          >
+            Ejercicio 4
+          </button>
+        </h2>
+        <div
+          id="flush-collapseFour"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingFour"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              4-La video tienda que presta sus servicios de alquiler de
+              películas a los usuarios del barrio el Porvenir, requiere de una
+              aplicación que permita registrar el alquiler de las películas que
+              adquieren sus usuarios. Para cada usuario se debe permitir la
+              opción de alquilar película, consultar películas disponibles y
+              recibir película en la video tienda con la opción de realizar
+              anotaciones sobre estas si se llegan a presentar daños u otra
+              novedad sobre la película.
+            </h6>
+            <p>
+                SubProceso menu ()<br>
+	Definir opcion Como Entero;<br>
+	Limpiar Pantalla;<br>
+	Escribir " Elije el numero que corresponda a la opcion que deseas ";<br>
+	Escribir "1. Alquiler de peliculas ";<br>
+	Escribir "2. Ver peliculas disponibles ";<br>
+	Escribir "3. Devolución de peliculas y comentarios sobre las peliculas ";<br>
+FinSubProceso<br>
+<br>
+SubProceso Alquiler (opcion)<br>
+	Escribir " Seleccionaste para alquilar la pelicula ", opcion;<br>
+FinSubProceso<br>
+
+SubProceso p_list ( )<br>
+	Escribir "101 Dalmatas";<br>
+	Escribir "100 primeras citas";<br>
+	Escribir "Batman";<br>
+	Escribir "Batman 2";<br>
+	Escribir "Batman vs Superman";<br>
+FinSubProceso<br>
+
+SubProceso validacion_existencia_peli (opcion)<br>
+	si opcion="101 dalmatas" o opcion="100 primeras citas" o opcion="batman" o opcion="batman 2" o opcion="batman vs superman"  Entonces<br>
+		Escribir "Alquiler Exitoso";<br>
+	SiNo<br>
+		Escribir "la pelicula no se encuentra disponible";<br>
+	FinSi<br>
+FinSubProceso<br>
+
+SubProceso devolucion (name_pelicula,comentario)<br>
+	Escribir "devolviste la pelicula ",name_pelicula;<br>
+	Escribir "si deseas dejar un comentario de la pelicula ",name_pelicula," ingresa 1 de lo contrario ingresa 0";<br>
+	<br>
+	si comentario="" Entonces<br>
+		Escribir "Sin comentarios";<br>
+	SiNo<br>
+		Escribir comentario;<br>
+	FinSi<br>
+	
+FinSubProceso<br>
+	
+Proceso sin_titulo <br>
+definir age,a,option Como Entero;<br>
+	Definir name,lastname,alquilar,coment Como Caracter;<br>
+
+	Escribir "Ejercicio 4";<br>
+	Escribir "Registrate";<br>
+	escribir "ingrese su nombre";<br>
+	leer name;<br>
+	escribir "ingrese su apellido";<br>
+	leer lastname;<br>
+	escribir "ingrese la edad";<br>
+	leer age;<br>
+	datos_personales(name,lastname,age);<br>
+	a<-1;<br>
+	Mientras a<>0 Hacer<br>
+		menu();<br>
+		Leer option;<br>
+		si option=1 Entonces<br>
+			Limpiar Pantalla;<br>
+			Escribir "Ingresa el nombre de la pelicula a Alquilar";<br>
+			Leer  alquilar;<br>
+			alquilar<-Minusculas(alquilar);<br>
+			Alquiler(alquilar);<br>
+			validacion_existencia_peli(alquilar);<br>
+			Escribir "digita 1 para ver el menu principal o 0 para finalizar ";<br>
+			Leer a;<br>
+		FinSi<br>
+		si option=2 Entonces<br>
+			Limpiar Pantalla;<br>
+			p_list( );<br>
+			Escribir "digita 1 para ver el menu principal o 0 para finalizar ";<br>
+			Leer a;<br>
+		FinSi<br>
+		si option=3 Entonces<br>
+			Limpiar Pantalla;<br>
+			Escribir "Ingresa el nombre de la pelicula a devolver";<br>
+			Leer  alquilar;<br>
+			Escribir "Si deseas ingresa tu comentario de la pelicula, de lo contrario oprime enter";<br>
+			Leer  coment;<br>
+			devolucion(alquilar,coment);<br>
+			Escribir "digita 1 para ver el menu principal o 0 para finalizar ";<br>
+			Leer a;<br>
+		FinSi<br>
+		
+		
+		
+	FinMientras<br>
+	
+FinProceso <br>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFive">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFive"
+            aria-expanded="false"
+            aria-controls="flush-collapseFive"
+          >
+            Ejercicio 5
+          </button>
+        </h2>
+        <div
+          id="flush-collapseFive"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingFive"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              5-La Droguería Mi Salud presta sus servicios en la localidad de
+              Suba y requiere una aplicación para poder facturar los productos
+              que vende a sus clientes y para ello, los productos tienen unas
+              características que deben indicársele al cliente para que pueda
+              escoger el producto a comprar. Para cada cliente, se tienen las
+              opciones de compra de producto, consulta de precios por producto y
+              devoluciones en caso de que se presenten.
+            </h6>
+            <p>
+				SubProceso datos_personales ( nombre,apellido,edad ) <br>
+				Escribir nombre," ",apellido," y tengo ",edad," años ";<br>
+			FinSubProceso<br>
+			
+			SubProceso menu ()<br>
+				Definir opcion Como Entero;<br>
+				Limpiar Pantalla;<br>
+				Escribir " Elije el numero que corresponda a la opcion que deseas ";<br>
+				Escribir "1. Compra de productos ";<br>
+				Escribir "2. Ver Productos disponibles ";<br>
+				Escribir "3. Devolución de productos ";<br>
+				Escribir "4. Salir de la tienda ";<br>
+			FinSubProceso<br>
+			
+			SubProceso compra (opcion)<br>
+				Escribir " Seleccionaste para comprar el siguiente producto ", opcion;<br>
+				Escribir " Seleccionaste para comprar el siguiente producto ", opcion;<br>
+			FinSubProceso<br>
+			
+			SubProceso p_list ( )<br>
+				Escribir " 1. Acetaminofen $3500";<br>
+				Escribir " 2. dolex gripa $5200";<br>
+				Escribir " 3. crema para arrugas $15000";<br>
+				Escribir " 4. mentas $200";<br>
+				Escribir " 5. chocolatinas $1500";<br>
+			FinSubProceso<br>
+			
+			SubProceso x<-validacion_existencia_producto (opcion)<br>
+				Definir x Como Entero;<br>
+				si opcion="acetaminofen" o opcion="dolex gripa" o opcion="crema para arrugas" o opcion="mentas" o opcion="chocolatinas"  Entonces<br>
+					Escribir "El producto se encuentra disponible";<br>
+				SiNo<br>
+					Escribir "El producto no se encuentra disponible";<br>
+					x<-0;<br>
+				FinSi<br>
+				
+				si opcion="acetaminofen"  Entonces<br>
+					x<-3500;<br>
+				FinSi<br>
+				si opcion="dolex gripa"  Entonces<br>
+					x<-5200;<br>
+				FinSi<br>
+				si opcion="crema para arrugas"  Entonces<br>
+					x<-15000;<br>
+				FinSi<br>
+				si opcion="mentas"  Entonces<br>
+					x<-200;<br>
+				FinSi<br>
+				si opcion="chocolatinas"  Entonces<br>
+					x<-1500;<br>
+				FinSi<br>
+				
+			FinSubProceso<br>
+			
+			SubProceso x<-valor_compra (unidad)<br>
+				Definir x Como Entero;<br>
+				si opcion="acetaminofen" o opcion="dolex gripa" o opcion="crema para arrugas" o opcion="mentas" o opcion="chocolatinas"  Entonces<br>
+					Escribir "El producto se encuentra disponible";<br>
+					x<-1;<br>
+				SiNo<br>
+					Escribir "El producto no se encuentra disponible";<br>
+					x<-0;<br>
+				FinSi<br>
+			FinSubProceso<br>
+			
+			SubProceso devolucion (name_product,comentario)<br>
+				Escribir "devolviste el producto ",name_product;<br>
+				
+				
+				si comentario="" Entonces<br>
+					Escribir "Se te enviara una respuesta a tu reclamación en el transcurso del día";<br>
+				SiNo<br>
+					Escribir comentario;<br>
+				FinSi<br>
+				
+			FinSubProceso<br>
+			
+			Proceso sin_titulo<br>
+	definir age,a,option,j,unidades,total,k,total_final Como Entero;<br>
+	Definir name,lastname,alquilar,coment Como Caracter;<br>
+	total_final<-0;<br>
+	k<-10;<br>
+		
+	Escribir "Ejercicio 5";<br>
+	Escribir "Registrate";<br>
+	escribir "ingrese su nombre";<br>
+	leer name;<br>
+	escribir "ingrese su apellido";<br>
+	leer lastname;<br>
+	escribir "ingrese la edad";<br>
+	leer age;<br>
+	datos_personales(name,lastname,age);<br>
+	a<-1;<br>
+	Mientras a<>0 Hacer<br>
+		menu();<br>
+		si k=0 Entonces<br>
+			Escribir "El valor total de todas tus compras es de ",total_final;<br>
+			Escribir "si desea pagar ahora oprima 1 de lo contrario oprima enter";<br>
+			leer j;<br>
+			si j=1 Entonces<br>
+				Escribir "Ingrese el monto del billete con el que va a pagar";<br>
+				Leer j;<br>
+				si j< total_final Entonces<br>
+					Escribir "lo sentimos  con este dinero no le alcanza";<br>
+					Escribir "elija un numeral de las opciones del menu";<br>
+				SiNo<br>
+					Escribir "Su saldo a fovor fue de ", j-total_final," pesos";<br>
+					Escribir "elija un numeral de las opciones del menu";<br>
+				FinSi<br>
+			FinSi<br>
+		FinSi<br>
+		Leer option;<br>
+		si option=1 Entonces<br>
+			Mientras option=1 Hacer<br>
+				Limpiar Pantalla;<br>
+				Escribir "Ingresa el nombre del producto a comprar";<br>
+				Leer  alquilar;<br>
+				alquilar<-Minusculas(alquilar);<br>
+				compra(alquilar);<br>
+				j<-validacion_existencia_producto(alquilar);<br>
+				si j<>0 Entonces<br>
+					Escribir "cuantas unidades deseas comprar";<br>
+					leer unidades;<br>
+					Escribir "el valor total de su compra es de ",unidades*j," pesos";<br>
+				FinSi<br>
+				total<-unidades*j;<br>
+				total_final<-total_final+total;<br>
+				Escribir "digita 1 para seguir comprando o 0 para volver al menu principal ";<br>
+				Leer k;<br>
+				option<-k;<br>
+				Escribir k;<br>
+			FinMientras<br>
+			
+		FinSi<br>
+		
+		si option=2 Entonces<br>
+			Limpiar Pantalla;<br>
+			p_list( );<br>
+			Escribir "digita 1 para ver el menu principal o 0 para finalizar ";<br>
+			Leer a;<br>
+		FinSi<br>
+		si option=3 Entonces<br>
+			Limpiar Pantalla;<br>
+			Escribir "Ingresa el nombre del producto a devolver";<br>
+			Leer  alquilar;<br>
+			Escribir "Si deseas ingresa tu comentario del producto a devolver, de lo contrario oprime enter";<br>
+			Leer  coment;<br>
+			devolucion(alquilar,coment);<br>
+			Escribir "digita 1 para ver el menu principal o 0 para finalizar ";<br>
+			Leer a;<br>
+		FinSi<br>
+		si option=4 Entonces<br>
+			Limpiar Pantalla;<br>
+			Escribir "agradecemos su visita a nuestra tienda ";<br>
+			a<-0;<br>
+		FinSi<br>
+	FinMientras<br>
+FinProceso<br>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingSix">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseSix"
+            aria-expanded="false"
+            aria-controls="flush-collapseSix"
+          >
+            Ejercicio 6
+          </button>
+        </h2>
+        <div
+          id="flush-collapseSix"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingSix"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              6-El taller de motos "El Maquinista" recibe motocicletas de alto
+              cilindraje para realizar las respectivas revisiones y requiere una
+              aplicación que le permita registrar los servicios generados a sus
+              clientes. Para cada motocicleta se debe tener registro del ingreso
+              al taller y las observaciones por parte del cliente. También debe
+              existir registro de salida del taller con las novedades y otra de
+              arreglos hechos por el mecánico en caso de que se requiera
+              inventariar cambios repuestos en la motocicleta al entregarla.
+            </h6>
+            <p>
+				SubProceso datos_personales ( nombre,placa,fecha,motivo ) <br>
+				escribir "- EL nombre completo del propietario es ", nombre," la placa del vehiculo es ", placa, " y la fecha de ingreso del vehiculo fue el ", fecha;<br>
+				Escribir "-El vehiculo se ingresa por las siguientes razones";<br>
+				Escribir motivo, " Segun lo descrito por el cliente ";<br>
+			FinSubProceso<br>
+			
+			SubProceso menu ()<br>
+				Definir opcion Como Entero;<br>
+				Limpiar Pantalla;<br>
+				Escribir "Ejercicio 6";<br>
+				Escribir "";<br>
+				Escribir " Elije el numero que corresponda a la opcion que deseas ";<br>
+				Escribir " 1. Datos del vehiculo y razones del cliente por las que se ingresa";<br>
+				escribir " 2. Reparaciones realizadas ";<br>
+				Escribir " 3. Salidas y Repuestos Utilizados ";<br>
+				Escribir " 4. Salir de la tienda ";<br>
+			FinSubProceso<br>
+			
+			SubProceso salidas<-reparaciones ( )<br>
+				Definir salidas Como Caracter;<br>
+				definir num Como Entero;<br>
+				num<-Azar(50);<br>
+				si num<=10 Entonces<br>
+					Escribir "Se hizo cambio de llantas";<br>
+					salidas<-"Se usaron 4 llantas michellin y el carro sale a los dos dias del ingreso";<br>
+				FinSi<br>
+				si num>10 y num<=20 Entonces<br>
+					Escribir "Se hizo cambio de aceite";<br>
+					salidas<-"Se hizo cambio de aceite 5w-15";<br>
+				FinSi<br>
+				si num>20 y num<=30 Entonces<br>
+					Escribir "Se hizo cambio de filtros de aire";<br>
+					salidas<-"Se cambiaron los filtros de aire y aceite";<br>
+				FinSi<br>
+				si num>30 y num<=40 Entonces<br>
+					Escribir "Se hizo cambio de pastillas de frenos";<br>
+					salidas<-"Se cambian las pastas de frenos a FGW125";<br>
+				FinSi<br>
+				si num>40 y num<=50 Entonces<br>
+					Escribir "Se hizo cambio de amortiguadores";<br>
+					salidas<-"Se hace cambio de los amortiguadores delanteros";<br>
+				FinSi<br>
+			FinSubProceso<br>
+			
+			
+			Proceso sin_titulo<br>
+				definir a,option,i Como Entero;<br>
+				Definir name,placa_,fecha_,razones,out Como Caracter;<br>
+				a<-10;<br>
+				
+				
+				
+				Mientras a<>0 Hacer<br>
+					menu();<br>
+					Leer option;<br>
+					si option=1 Entonces<br>
+						Escribir "ingresa tu nombre completo";<br>
+						Leer name;<br>
+						Escribir "ingresa la placa de tu vehículo";<br>
+						Leer placa_;<br>
+						Escribir "ingresa la fecha de ingreso del vehículo en el siguiente formato dd/mes/año";<br>
+						Leer fecha_;<br>
+						Escribir "Razones por las que el cliente ingreso el vehículo:";<br>
+						Leer razones;<br>
+						datos_personales(name,placa_,fecha_,razones );<br>
+						Escribir "";<br>
+						Escribir "- Oprima enter para volver al menu inicial";<br>
+						leer i;<br>
+					FinSi<br>
+					
+					si option=2 Entonces<br>
+						out<-reparaciones();<br>
+						Escribir "- Oprima enter para volver al menu inicial";<br>
+						leer i;<br>
+					FinSi<br>
+					
+					si option=3 Entonces<br>
+						Escribir out;<br>
+						Escribir "- Oprima enter para volver al menu inicial";<br>
+						leer i;<br>
+					FinSi<br>
+					
+					
+					
+					si option=4 Entonces<br>
+						a<-0;<br>
+					FinSi<br>
+					
+					
+				FinMientras<br>
+			
+				
+				
+			FinProceso<br>
+			
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingSeven">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseSeven"
+            aria-expanded="false"
+            aria-controls="flush-collapseSeven"
+          >
+            Ejercicio 7
+          </button>
+        </h2>
+        <div
+          id="flush-collapseSeven"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingSeven"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              7-La Secretaría de Salud Municipal requiere de una aplicación que
+              le permita calcular el IMC (Índice de masa corporal) y requiere
+              los datos peso en kilogramos y estatura en metros Para cada
+              persona encuestada adicional a los datos suministrados, debe
+              mostrar el resultado para cada uno y establecer en qué rango se
+              encuentra (bajo peso, normal, sobrepeso y obeso).
+            </h6>
+            <p>
+
+				SubProceso out<-datos_personales ( nombre,weigth,high ) <br>
+				Definir out Como Caracter;<br>
+				escribir "- EL nombre completo del paciente es ", nombre," y tiene un peso de ", weigth, " kilos y mide ", high, " mts ";<br>
+				out<-resultado(weigth,high);<br>
+				Escribir "- El resultado de tu IMC es de ",out;<br>
+			FinSubProceso<br>
+			
+			SubProceso menu ()<br>
+				Definir opcion Como Entero;<br>
+				Limpiar Pantalla;<br>
+				Escribir "Calcula tu IMC";<br>
+				Escribir "";<br>
+				Escribir " Elije el numero que corresponda a la opcion que deseas ";<br>
+				Escribir " 1. Conoce tu IMC";<br>
+				Escribir " 2. Salir de la aplicacion ";<br>
+			FinSubProceso<br>
+			
+			SubProceso salidas<-resultado (peso,estatura)<br>
+				Definir salidas Como Caracter;<br>
+				
+				si peso/estatura ^2<=18.4 Entonces<br>
+					salidas<-"bajo peso";<br>
+				FinSi<br>
+				
+				si peso/estatura^2>18.4 y peso/estatura^2<=24.9 Entonces<br>
+					salidas<-"peso normal";<br>
+				FinSi<br>
+				
+				si peso/estatura^2>25 y peso/estatura^2<=29.9 Entonces<br>
+					salidas<-"sobrepeso";<br>
+				FinSi<br>
+				
+				si peso/estatura^2>30 y peso/estatura^2<=34.9 Entonces<br>
+					salidas<-"obesidad grado 1";<br>
+				FinSi<br>
+				
+				si peso/estatura^2>35 y peso/estatura^2<=39.9 Entonces<br>
+					salidas<-"obesidad grado 2";<br>
+				FinSi<br>
+				
+				si peso/estatura^2>=40  Entonces<br>
+					salidas<-"obesidad grado 3";<br>
+				FinSi<br>
+			FinSubProceso<br>
+			
+			
+			Proceso sin_titulo<br>
+				definir a,option,i Como Entero;<br>
+				definir pesas,mides Como Real;<br>
+				Definir name,result Como Caracter;<br>
+				a<-10;<br>
+				
+				Mientras a<>0 Hacer<br>
+					menu();<br>
+					Leer option;<br>
+					si option=1 Entonces<br>
+						Escribir "* ingresa tu nombre completo";<br>
+						Leer name;<br>
+						Escribir "* ingresa tu peso en kilogramos";<br>
+						Leer pesas;<br>
+						Escribir "* ingresa tu altura en metros";<br>
+						Leer mides;<br>
+						
+						result<-datos_personales(name,pesas,mides);<br>
+						Escribir "";<br>
+						Escribir "- Oprima enter para volver al menu inicial";<br>
+						leer i;<br>
+					FinSi<br>
+					
+					si option=2 Entonces<br>
+						a<-0;<br>
+					FinSi<br>
+					
+				FinMientras<br>
+			
+			FinProceso<br>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingEight">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseEight"
+            aria-expanded="false"
+            aria-controls="flush-collapseEight"
+          >
+            Ejercicio 8
+          </button>
+        </h2>
+        <div
+          id="flush-collapseEight"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingEight"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              8-El pastelero Don Carlos es el mejor pastelero de la ciudad y
+              requiere una aplicación que le permita registrar los pedidos de
+              los clientes en cuanto a las tortas que realiza. Cada torta tiene
+              unas características propias como sabor, cantidad (porciones) y
+              decoraciones). Se requiere que la aplicación permita registrar los
+              pedidos, las tortas disponibles y las ventas que se registren
+              diariamente.
+            </h6>
+            <p>
+                
+SubProceso datos_personales ( nombre )<br>
+escribir "- EL nombre completo del cliente es ", nombre;<br>
+FinSubProceso<br>
+
+SubProceso menu ()<br>
+Definir opcion Como Entero;<br>
+Limpiar Pantalla;<br>
+Escribir "Ejercicio 8";<br>
+Escribir "";<br>
+Escribir " Elije el numero que corresponda a la opcion que deseas ";<br>
+Escribir " 1. Realizar un Pedido";<br>
+escribir " 2. Tortas disponibles ";<br>
+Escribir " 3. Ventas registradas";<br>
+Escribir " 4. Salir de la tienda ";<br>
+FinSubProceso<br>
+
+SubProceso pedido_realizado<-pedido( )<br>
+Definir pedido_realizado,porciones,opcion_a,opcion_b,costo_u,costo_u_s,j,anulado Como Entero;<br>
+Definir sabor,decoracion Como Caracter;<br>
+anulado<-0;<br>
+
+
+Escribir "Seleccione el numeral que corresponde a las porciones deseadas:";<br>
+Escribir " 1. 8 porciones";<br>
+escribir " 2. 12 porciones";<br>
+Escribir " 3. 16 porciones";<br>
+Escribir " 4. 32 porciones";<br>
+leer porciones;<br>
+
+Segun  porciones Hacer<br>
+	1:<br>
+		porciones<-8;<br>
+		costo_u<-10000;<br>
+	2:<br>
+		porciones<-12;<br>
+		costo_u<-15000;<br>
+	3:<br>
+		porciones<-16;<br>
+		costo_u<-18000;<br>
+	4:<br>
+		porciones<-32;<br>
+		costo_u<-32000;	<br>
+	De Otro Modo:<br>
+		Escribir "la opcion elegida no existe";<br>
+		anulado<-1;<br>
+FinSegun<br>
+
+Limpiar Pantalla;<br>
+
+Escribir "Seleccione el numeral que corresponde a sabor que deseadas:";<br>
+Escribir " 1. Arequipe";<br>
+escribir " 2. Mora";<br>
+Escribir " 3. Chocolate";<br>
+
+leer opcion_a;<br>
+Segun  opcion_a Hacer<br>
+	1:<br>
+		sabor<-"Arequipe";<br>
+		costo_u_s<-5000;<br>
+	2:<br>
+		sabor<-"Mora";<br>
+		costo_u_s<-3000;<br>
+	3:<br>
+		sabor<-"Chocolate";<br>
+		costo_u_s<-4000;<br>
+		
+	De Otro Modo:<br>
+		Escribir "la opcion elegida no existe";<br>
+		anulado<-1;<br>
+FinSegun<br>
+
+Limpiar Pantalla;<br>
+
+Escribir "Seleccione el numeral de la decoración que deseas:";<br>
+Escribir " 1. Primera Comunion";<br>
+escribir " 2. Matrimonio";<br>
+Escribir " 3. Cumpleaños";<br>
+
+leer opcion_b;<br>
+
+Segun  opcion_b Hacer<br>
+	1:<br>
+		decoracion<-"Primera Comunion";<br>
+	2:<br>
+		decoracion<-"Matrimonio";<br>
+	3:<br>
+		decoracion<-"Cumpleaños";<br>
+		
+	De Otro Modo:<br>
+		Escribir "la opcion elegida no existe";<br>
+		anulado<-1;<br>
+FinSegun<br>
+
+si anulado=0 Entonces<br>
+	Escribir "Elegiste una torta de ", porciones," porciones, de sabor a ", sabor," y con una decoracion de ",decoracion; <br>
+	Escribir "esta torta tiene un valor de ",costo_u+costo_u_s," pesos"; <br>
+	Escribir "";<br>
+	Escribir "Ingrese:"; <br>
+	Escribir "1- para confirmar pedido"; <br>
+	Escribir "2- para cancelar el pedido"; <br>
+	leer j;<br>
+	si j=1 Entonces<br>
+		pedido_realizado<-1;<br>
+	FinSi<br>
+	si j=2 Entonces<br>
+		pedido_realizado<-0;<br>
+	FinSi<br>
+SiNo<br>
+	Escribir "realiza tu pedido de nuevo, ingresaste algun caracter que no se reconocio";<br>
+FinSi<br>
+
+FinSubProceso<br>
+
+SubProceso disponibles()<br>
+Escribir " Las tortas disponibles en este momento son de los siguientes sabores: ";<br>
+Escribir " 1. Arequipe";<br>
+escribir " 2. Mora";<br>
+Escribir " 3. Chocolate";<br>
+FinSubProceso<br>
+
+
+Proceso sin_titulo<br>
+definir a,option,i,contador,tortas,tor_pedidas Como Entero;<br>
+Definir name Como Caracter;<br>
+
+tor_pedidas<-0;<br>
+contador<-0;<br>
+tortas<-10;<br>
+a<-10;<br>
+
+
+
+Mientras a<>0 Hacer<br>
+	menu();<br>
+	Leer option;<br>
+	si option=1 Entonces<br>
+		Escribir "ingresa tu nombre completo";<br>
+		Leer name;<br>
+		datos_personales(name);<br>
+		Escribir "";<br>
+		contador<-pedido();<br>
+		tor_pedidas<-tor_pedidas+contador;<br>
+		Escribir "- Oprima enter para volver al menu inicial";<br>
+		leer i;<br>
+		
+	FinSi<br>
+	
+	si option=2 Entonces<br>
+		disponibles();<br>
+		si tortas-tor_pedidas>=1 Entonces<br>
+			Escribir "En el momento tenemos disponibles ",tortas-tor_pedidas, " tortas para realizar el dia de mañana";<br>
+		SiNo<br>
+			Escribir "ya no hay tortas disponibles para mañana, si deseas vuelve a intentarlo mañana";<br>
+		FinSi<br>
+		
+		Escribir "- Oprima enter para volver al menu inicial";<br>
+		leer i;<br>
+	FinSi<br>
+	
+	si option=3 Entonces<br>
+		Escribir "Se han registraso ",contador, " ventas el dia de hoy";<br>
+		Escribir "";<br>
+		Escribir "- Oprima enter para volver al menu inicial";<br>
+		leer i;<br>
+	FinSi<br>
+	
+	si option=4 Entonces<br>
+		a<-0;<br>
+	FinSi<br>
+	
+FinMientras<br>
+	
+FinProceso<br>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingNine">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseNine"
+            aria-expanded="false"
+            aria-controls="flush-collapseNine"
+          >
+            Ejercicio 9
+          </button>
+        </h2>
+        <div
+          id="flush-collapseNine"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingNine"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              9-El profesor de geometría está explicando a sus estudiantes las
+              fórmulas para calcular el área de diferentes figuras geométricas,
+              para ello requiere una aplicación que le facilite el ejercicio
+              solicitándole los valores al estudiante. La aplicación debe
+              permitir que el estudiante seleccione si desea calcular el área de
+              un rectángulo, triángulo o trapecio. No olvide solicitar los datos
+              necesarios para realizar cada cálculo y mostrar su respectivo
+              resultado.
+            </h6>
+           <p>
+            
+SubProceso opt<-menu () <br>
+Definir opt Como Entero;<br>
+Limpiar Pantalla;<br>
+escribir "digita el numero de la geometria a la que le desea Calcular el area";<br>
+Escribir " 1. triangulo";<br>
+Escribir " 2. rectangulo";<br>
+Escribir " 3. trapecio";<br>
+leer opt;<br>
+FinSubProceso<br>
+
+SubProceso resultado (eleccion)<br>
+Definir salidas Como Caracter;<br>
+definir base,altura,basemayor,basemenor Como Real;<br>
+salidas<-"hi";<br>
+
+si eleccion=1 Entonces<br>
+	escribir "ingrese el valor de la base en metros";<br>
+	leer base;<br>
+	escribir "ingrese el valor de la altura en metros";<br>
+	leer altura;<br>
+	Escribir "el area del triangulo es igual a ", base*altura/2 , " metros cuadrados";<br>
+	Escribir "oprime enter para volver al menu principal";<br>
+	leer salidas;<br>
+FinSi<br>
+
+si eleccion=2 Entonces<br>
+	escribir "ingrese el valor de la base en metros";<br>
+	leer base;<br>
+	escribir "ingrese el valor de la altura en metros";<br>
+	leer altura;<br>
+	Escribir "el area del rectangulo es igual a ", base*altura , " metros cuadrados";<br>
+	Escribir "oprime enter para volver al menu principal";<br>
+	leer salidas;<br>
+FinSi<br>
+
+si eleccion=3 Entonces<br>
+	escribir "ingrese el valor de la baseMayor en metros";<br>
+	leer basemayor;<br>
+	escribir "ingrese el valor de la baseMenor en metros";<br>
+	leer basemenor;<br>
+	escribir "ingrese el valor de la altura en metros";<br>
+	leer altura;<br>
+	
+	Escribir "el area del Trapecio es igual a ", (basemayor+basemenor)*altura/2 , " metros cuadrados";<br>
+	Escribir "oprime enter para volver al menu principal";<br>
+	leer salidas;<br>
+FinSi<br>
+
+FinSubProceso<br>
+
+
+Proceso sin_titulo<br>
+definir a,option,i Como Entero;<br>
+a<-10;<br>
+
+Mientras a<>0 Hacer<br>
+	option<-menu();<br>
+	resultado(option);<br>
+	
+	
+FinMientras<br>
+
+FinProceso<br>
+
+
+           </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTen">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTen"
+            aria-expanded="false"
+            aria-controls="flush-collapseTen"
+          >
+            Ejercicio 10
+          </button>
+        </h2>
+        <div
+          id="flush-collapseTen"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingTen"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <h6>
+              10-El banco "Su banco fiel" es un banco que inicia sus actividades
+              financieras y necesita una aplicación para llevar las cuentas de
+              sus usuarios; por lo tanto, se sugiere que la cuenta tenga los
+              atributos titular y cantidad. Para cada cliente las cuentas
+              permitirán realizar ingresos, retiros o consultas de valor. En los
+              ingresos no se pueden insertar valores negativos y para los
+              retiros el valor no puede ser mayor al valor que tiene en la
+              cuenta.
+            </h6>
+          <p> 
+            SubProceso saldoout<-operaciones ( opcion,saldo ) <br>
+	definir saldoout,ingreso,retiros Como Entero;<br>
+	Segun opcion hacer<br>
+		1:<br>
+			escribir " digita el monto que deseas ingresar ";<br>
+			leer ingreso;<br>
+			Escribir "tu saldo actual es de ", (saldo+ingreso), " pesos";<br>
+			saldoout<-saldo+ingreso;<br>
+			
+		2:<br>
+			escribir " digita el monto que deseas retirar ";<br>
+			leer retiros;<br>
+			si retiros>10000 Entonces<br>
+				Escribir "usted no cuenta con fondos para esta transaccion";				<br>
+			FinSi<br>
+			si retiros < 10000 Entonces<br>
+				Escribir " Su saldo actual con este retiro es de ", (saldo-retiros), " pesos";<br>
+				saldoout<-saldo-retiros;<br>
+			FinSi<br>
+		3:<br>
+			Escribir " Su saldo actual es de ", saldo;<br>
+			saldoout<-saldo;<br>
+	FinSegun<br>
+	
+FinSubProceso<br>
+
+SubProceso menubanco (  )<br>
+	Escribir "Digite el numero de la opcion que desea";<br>
+	Escribir "1. Ingreso";<br>
+	Escribir "2. Retiros";<br>
+	Escribir "3. consultar Saldo";<br>
+	Escribir "0. salir";<br>
+FinSubProceso<br>
+
+Proceso Banco<br>
+	Escribir " Bienvenido a Banco Fiel";<br>
+	
+	Definir NombreCompleto Como Caracter;<br>
+	escribir "hola, ¿Cual es tu nombre y apellidos? "; <br>
+	leer NombreCompleto;<br>
+	Limpiar Pantalla;<br>
+	Escribir " Bienvenido ",NombreCompleto;<br>
+	definir ingreso, retiros , saldo,menu Como Entero;<br>
+	saldo<-10000;<br>
+	menu<--1;<br>
+	definir opcion Como Entero;<br>
+	Mientras menu<>0 Hacer<br>
+		menubanco();<br>
+		leer opcion;<br>
+		Si opcion=0 Entonces<br>
+			menu<-0;<br>
+			escribir "vuelva pronto ",NombreCompleto;<br>
+		SiNo<br>
+			Limpiar Pantalla;<br>
+			saldo<-operaciones(opcion,saldo);<br>
+		FinSi<br>
+		
+	FinMientras<br>
+
+FinProceso<br>
+          </p>
+          </div>
+        </div>
+      </div>
+    </div>
+	<div id="video">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/GxuOKl5xmdE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	</div>
+    <footer>
+      <p>Realizado por: Daniel Felipe Betancur Córdoba</p>
+      <p>Derechos recervados</p>
+      <div class="enlacesFooter">
+        <a href="https://mail.google.com/mail/u/0/?pli=1#inbox?compose=new">
+          <img src="img\mail.png" alt="correo electronico" />
+        </a>
+        <a href="https://www.linkedin.com/in/daniel-felipe-betancur-cordoba/">
+          <img src="img\linkedin.png" alt="linkedin" />
+        </a>
+        <a href="https://github.com/Betancur1991">
+          <img src="img\github.png" alt="github" />
+        </a>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
